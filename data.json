@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1781698607584",
+    "title": "Drone Kias Fest",
+    "category": "videography",
+    "description": "Konser Kias Fest",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Premier Pro",
+      "Dji"
+    ],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "/uploads/1781698607442_DJI_0275_2.mp4",
+    "gallery": [
+      "/uploads/1781699107265_DJI_0275_1.mp4",
+      "/uploads/1781699109666_DJI_0275_7.mp4",
+      "/uploads/1781699111147_For_Revenge.mp4",
+      "/uploads/1781699112183_tenxi.mp4"
+    ]
+  },
+  {
+    "id": "1781687931839",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1781687927047_Kaluna_visual-52__31_.png",
+    "gallery": [
+      "/uploads/1781687928230_Kaluna_visual-52__2_.png",
+      "/uploads/1781687929283_Kaluna_visual-52__3_.png",
+      "/uploads/1781687930141_Kaluna_visual-52__6_.png",
+      "/uploads/1781687930936_Kaluna_visual-52__15_.png",
+      "/uploads/1781687931729_Kaluna_visual-52__18_.png"
+    ]
+  },
+  {
+    "id": "1781686273101",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Photoshop"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1781686271471_Kaluna_visual-2.jpg",
+    "gallery": [
+      "/uploads/1781686271813_Kaluna_visual-22.jpg",
+      "/uploads/1781686272230_Kaluna_visual-34.jpg",
+      "/uploads/1781686272391_Kaluna_visual-39.jpg",
+      "/uploads/1781686272842_Kaluna_visual-27.jpg",
+      "/uploads/1781686273074_Kaluna_visual-26.jpg"
+    ]
+  },
+  {
+    "id": "1781650252989",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1781650249519_Kaluna_visual-1.jpg",
+    "gallery": [
+      "/uploads/1781650250321_Kaluna_visual-29.jpg",
+      "/uploads/1781650250980_Kaluna_visual-30.jpg",
+      "/uploads/1781650251440_Kaluna_visual-32.jpg",
+      "/uploads/1781650251732_Kaluna_visual-17.jpg",
+      "/uploads/1781650252301_Kaluna_visual-25.jpg",
+      "/uploads/1781650252900_Kaluna_visual-27.jpg"
+    ]
+  },
+  {
+    "id": "1781537146840",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "GRADUATION",
+    "client": "Sindy",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1781537145573_kaluna_visual__22_of_47_.jpg",
+    "gallery": [
+      "/uploads/1781537145828_kaluna_visual__17_of_47_.jpg",
+      "/uploads/1781537146162_kaluna_visual__23_of_47_.jpg",
+      "/uploads/1781537146650_kaluna_visual__31_of_47_.jpg",
+      "/uploads/1781537146824_kaluna_visual__38_of_47_.jpg"
+    ]
+  }
+]
