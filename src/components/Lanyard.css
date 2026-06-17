@@ -1,0 +1,25 @@
+.lanyard-wrapper {
+  width: 900px;
+  height: 1100px;
+  position: absolute;
+  top: 0; /* Aligns exactly with the bottom border line of the navbar at top of page */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Ensure the Canvas element fits its wrapper exactly */
+.lanyard-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  pointer-events: none; /* dynamically toggled via PointerEventController */
+}
+
+@media (max-width: 1150px) {
+  /* Hide from viewport on tablets and mobile where margin space is not available */
+  .lanyard-wrapper {
+    display: none;
+  }
+}

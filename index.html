@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portofolio Kaluna Visual - Fotografer, Videografer, Desainer Grafis, dan UI/UX Designer. Menampilkan karya-karya visual minimalis dan fungsional." />
+    <meta name="keywords" content="Kaluna Visual, Portofolio, Fotografer, Videografer, Desain Grafis, UI/UX Design, Minimalis, Indonesia" />
+    <title>Kaluna Visual — Portofolio Kreatif</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
