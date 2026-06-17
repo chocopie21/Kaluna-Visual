@@ -1,5 +1,31 @@
 [
   {
+    "id": "1781726867082",
+    "title": "Kias Fest (DNA)",
+    "category": "photography",
+    "description": "DNA sesion",
+    "client": "DNA ",
+    "date": "",
+    "tools": [
+      "Lightroom",
+      "Fuji"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1781726864640_DSCF0508.jpg",
+    "gallery": [
+      "/uploads/1781726865619_DSCF0509.jpg",
+      "/uploads/1781726865737_DSCF0479.jpg",
+      "/uploads/1781726865911_DSCF0480.jpg",
+      "/uploads/1781726866104_DSCF0481.jpg",
+      "/uploads/1781726866285_DSCF0483.jpg",
+      "/uploads/1781726866510_DSCF0459.jpg",
+      "/uploads/1781726866686_DSCF0466.jpg",
+      "/uploads/1781726866876_DSCF0468.jpg",
+      "/uploads/1781726867048_DSCF0468-2.jpg"
+    ]
+  },
+  {
     "id": "1781698607584",
     "title": "Drone Kias Fest",
     "category": "videography",
