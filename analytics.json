@@ -1,5 +1,5 @@
 {
-  "totalViews": 1422,
+  "totalViews": 1423,
   "totalClicks": 15,
   "dailyViews": [
     120,
@@ -7,7 +7,7 @@
     180,
     142,
     210,
-    250,
+    251,
     365
   ],
   "projectClicks": {
@@ -29,12 +29,12 @@
     "uiux": 95
   },
   "deviceShare": {
-    "mobile": 56,
-    "desktop": 44
+    "mobile": 55,
+    "desktop": 45
   },
   "sourceShare": {
-    "direct": 47,
+    "direct": 48,
     "social": 35,
-    "search": 18
+    "search": 17
   }
 }
