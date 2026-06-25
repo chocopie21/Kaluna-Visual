@@ -1,11 +1,11 @@
 {
-  "totalViews": 1423,
-  "totalClicks": 15,
+  "totalViews": 1428,
+  "totalClicks": 17,
   "dailyViews": [
     120,
     155,
-    180,
-    142,
+    181,
+    146,
     210,
     251,
     365
@@ -19,7 +19,9 @@
     "1781887745575": 5,
     "1781887537585": 6,
     "1781891618833": 17,
-    "1781892402331": 14
+    "1781892402331": 14,
+    "1782404695643": 13,
+    "1782405112163": 15
   },
   "categoryViews": {
     "all": 340,
@@ -29,12 +31,12 @@
     "uiux": 95
   },
   "deviceShare": {
-    "mobile": 55,
-    "desktop": 45
+    "mobile": 50,
+    "desktop": 50
   },
   "sourceShare": {
-    "direct": 48,
+    "direct": 50,
     "social": 35,
-    "search": 17
+    "search": 15
   }
 }

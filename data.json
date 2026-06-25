@@ -1,5 +1,122 @@
 [
   {
+    "id": "1782405112163",
+    "title": "Kias Fest (DNA)",
+    "category": "photography",
+    "description": "Kias Fest (DNA)",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1782405111789_DSCF0508__Large_.jpg",
+    "gallery": [
+      {
+        "url": "/uploads/1782405111805_DSCF0466__Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405111829_DSCF0459__Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405111861_DSCF0468__Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "/uploads/1782405111890_DSCF0479__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405111911_DSCF0480__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405111932_DSCF0472-Edit__Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "/uploads/1782405111957_DSCF0481__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405111987_DSCF0468-2__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405112015_DSCF0499__Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "/uploads/1782405112039_DSCF0483__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405112074_DSCF0507__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405112106_DSCF0509__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782405112150_DSCF0508__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1782404695643",
+    "title": "Kias Fest",
+    "category": "videography",
+    "description": "Drone Kias Fest",
+    "client": "Kias Fest",
+    "date": "",
+    "tools": [
+      "DJI"
+    ],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "/uploads/1782404688430_DJI_0275.mp4",
+    "gallery": [
+      {
+        "url": "/uploads/1782404689635_fiersa_besari.mp4",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782404690610_For_Revenge.mp4",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782404691766_DJI_0001.mp4",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1782404694825_DJI_0275_5.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
     "id": "1781892402331",
     "title": "Buku Tahunan Sekolah",
     "category": "photography",
