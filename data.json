@@ -1,78 +1,128 @@
 [
   {
     "id": "1782405112163",
-    "title": "Kias Fest (DNA)",
+    "title": "Kias Fest",
     "category": "photography",
-    "description": "Kias Fest (DNA)",
+    "description": "Keseruan Kias Fest",
     "client": "",
     "date": "",
     "tools": [],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1782405111789_DSCF0508__Large_.jpg",
+    "mediaUrl": "uploads/1783396687986_DJI_0283.jpg",
     "gallery": [
       {
-        "url": "/uploads/1782405111805_DSCF0466__Large_.jpg",
+        "url": "uploads/1782405111805_DSCF0466__Large_.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1782405111829_DSCF0459__Large_.jpg",
+        "url": "uploads/1782405111829_DSCF0459__Large_.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1782405111861_DSCF0468__Large_.jpg",
+        "url": "uploads/1782405111861_DSCF0468__Large_.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1782405111890_DSCF0479__Large_.jpg",
+        "url": "uploads/1782405111890_DSCF0479__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405111911_DSCF0480__Large_.jpg",
+        "url": "uploads/1782405111911_DSCF0480__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405111932_DSCF0472-Edit__Large_.jpg",
+        "url": "uploads/1782405111932_DSCF0472-Edit__Large_.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1782405111957_DSCF0481__Large_.jpg",
+        "url": "uploads/1782405111957_DSCF0481__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405111987_DSCF0468-2__Large_.jpg",
+        "url": "uploads/1782405111987_DSCF0468-2__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405112015_DSCF0499__Large_.jpg",
+        "url": "uploads/1782405112015_DSCF0499__Large_.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1782405112039_DSCF0483__Large_.jpg",
+        "url": "uploads/1782405112039_DSCF0483__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405112074_DSCF0507__Large_.jpg",
+        "url": "uploads/1782405112074_DSCF0507__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405112106_DSCF0509__Large_.jpg",
+        "url": "uploads/1782405112106_DSCF0509__Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782405112150_DSCF0508__Large_.jpg",
+        "url": "uploads/1782405112150_DSCF0508__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783395154286_SAMPLE-33__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783395154368_SAMPLE-25__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559361_KIAS_FEST__105___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559379_KIAS_FEST__95___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559442_KIAS_FEST__96___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559486_KIAS_FEST__138___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559520_KIAS_FEST__125___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559559_KIAS_FEST__145___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559584_KIAS_FEST__171___Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1783396559608_KIAS_FEST__169___Large_.jpg",
         "layout": "full",
         "padding": false
       }
@@ -81,7 +131,7 @@
   },
   {
     "id": "1782404695643",
-    "title": "Kias Fest",
+    "title": "Kias Fest (drone)",
     "category": "videography",
     "description": "Drone Kias Fest",
     "client": "Kias Fest",
@@ -91,25 +141,151 @@
     ],
     "featured": true,
     "mediaType": "video",
-    "mediaUrl": "/uploads/1782404688430_DJI_0275.mp4",
+    "mediaUrl": "uploads/1782404688430_DJI_0275.mp4",
     "gallery": [
       {
-        "url": "/uploads/1782404689635_fiersa_besari.mp4",
+        "url": "uploads/1782404689635_fiersa_besari.mp4",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782404690610_For_Revenge.mp4",
+        "url": "uploads/1782404690610_For_Revenge.mp4",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782404691766_DJI_0001.mp4",
+        "url": "uploads/1782404691766_DJI_0001.mp4",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1782404694825_DJI_0275_5.mp4",
+        "url": "uploads/1782404694825_DJI_0275_5.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783398842988",
+    "title": "Sertijab Organisasi",
+    "category": "photography",
+    "description": "MPK OSIS SMKN 2 Karawang",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "uploads/1783398842927_Kaluna_visual_-_Photography_Videography_in_Karawang_Indonesia.mp4",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783397249424",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1783397249065_9adfe1220265393.67bfe1d44e171.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1783397249133_6e7f31220265393.67bfe1d44e75f.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397249204_508171220265393.67bfe1d44f6a2.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397249286_86165f220265393.67bfe1d44ef32.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397249396_15d3ef220265393.67bfe1d44fc1b.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783397177029",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "graduation",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1783397176684_13a5f5218085469.679b609d9d866.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1783397176767_b47be2218085469.679b609d9cfd7.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397176842_08502c218085469.679b609d9ea59.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1783397176921_a3fdd0218085469.679b609d9e2da.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397177011_d2efde218085469.679b609d9ddc5.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783397068316",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1783397067658_3867e2229672141.6868e8f332640.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1783397067773_2bb19e229672141.6868e8f3318c4.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397067867_f0c273229672141.6868e8f331f81.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397067973_ed820a229672141.6868e8f330c7c.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1783397068136_405abc229672141.6868e8f331168.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397068283_3bbc0b229672141.6868e8f332f9b.jpg",
         "layout": "full",
         "padding": false
       }
@@ -126,130 +302,130 @@
     "tools": [],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781892396130_kaluna_visual-5.jpg",
+    "mediaUrl": "uploads/1781892396130_kaluna_visual-5.jpg",
     "gallery": [
       {
-        "url": "/uploads/1781892396293_kaluna_visual-2.jpg",
+        "url": "uploads/1781892396293_kaluna_visual-2.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892396469_kaluna_visual-5.jpg",
+        "url": "uploads/1781892396469_kaluna_visual-5.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892396655_kaluna_visual-1.jpg",
+        "url": "uploads/1781892396655_kaluna_visual-1.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892396876_kaluna_visual-3.jpg",
+        "url": "uploads/1781892396876_kaluna_visual-3.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892397104_kaluna_visual-4.jpg",
+        "url": "uploads/1781892397104_kaluna_visual-4.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892397332_kaluna_visual-1.jpg",
+        "url": "uploads/1781892397332_kaluna_visual-1.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892397524_kaluna_visual-2.jpg",
+        "url": "uploads/1781892397524_kaluna_visual-2.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892397730_kaluna_visual-5.jpg",
+        "url": "uploads/1781892397730_kaluna_visual-5.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1781892397960_kaluna_visual-4.jpg",
+        "url": "uploads/1781892397960_kaluna_visual-4.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892398204_kaluna_visual-3.jpg",
+        "url": "uploads/1781892398204_kaluna_visual-3.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892398465_kaluna_visual-1.jpg",
+        "url": "uploads/1781892398465_kaluna_visual-1.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892399357_kaluna_visual-5.jpg",
+        "url": "uploads/1781892399357_kaluna_visual-5.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892399657_kaluna_visual-2.jpg",
+        "url": "uploads/1781892399657_kaluna_visual-2.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892399951_kaluna_visual-3.jpg",
+        "url": "uploads/1781892399951_kaluna_visual-3.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892400195_kaluna_visual-4.jpg",
+        "url": "uploads/1781892400195_kaluna_visual-4.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892400375_kaluna_visual-1.jpg",
+        "url": "uploads/1781892400375_kaluna_visual-1.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1781892400554_kaluna_visual-2.jpg",
+        "url": "uploads/1781892400554_kaluna_visual-2.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892400767_kaluna_visual-5.jpg",
+        "url": "uploads/1781892400767_kaluna_visual-5.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892400998_kaluna_visual-4.jpg",
+        "url": "uploads/1781892400998_kaluna_visual-4.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892401199_kaluna_visual-3.jpg",
+        "url": "uploads/1781892401199_kaluna_visual-3.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892401391_kaluna_visual-1.jpg",
+        "url": "uploads/1781892401391_kaluna_visual-1.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892401600_kaluna_visual-5.jpg",
+        "url": "uploads/1781892401600_kaluna_visual-5.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781892401874_kaluna_visual-2.jpg",
+        "url": "uploads/1781892401874_kaluna_visual-2.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892402096_kaluna_visual-4.jpg",
+        "url": "uploads/1781892402096_kaluna_visual-4.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1781892402307_kaluna_visual-3.jpg",
+        "url": "uploads/1781892402307_kaluna_visual-3.jpg",
         "layout": "full",
         "padding": false
       }
@@ -266,95 +442,95 @@
     "tools": [],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781891618093_File_Edit__77___Large_.jpg",
+    "mediaUrl": "uploads/1781891618093_File_Edit__77___Large_.jpg",
     "gallery": [
       {
-        "url": "/uploads/1781891618121_File_Edit__64___Large_.jpg",
+        "url": "uploads/1781891618121_File_Edit__64___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781891618150_File_Edit__74___Large_.jpg",
-        "layout": "full",
-        "padding": true
-      },
-      {
-        "url": "/uploads/1781891618176_File_Edit__76___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618203_File_Edit__21___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618231_File_Edit__38___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618263_File_Edit__50___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618306_File_Edit__48___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618333_File_Edit__53___Large_.jpg",
-        "layout": "half",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618371_File_Edit__57___Large_.jpg",
-        "layout": "half",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618404_File_Edit__68___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618447_File_Edit__73___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "/uploads/1781891618478_File_Edit__17___Large_.jpg",
+        "url": "uploads/1781891618150_File_Edit__74___Large_.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1781891618521_File_Edit__9___Large_.jpg",
+        "url": "uploads/1781891618176_File_Edit__76___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781891618563_File_Edit__39___Large_.jpg",
+        "url": "uploads/1781891618203_File_Edit__21___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781891618641_File_Edit__42___Large_.jpg",
+        "url": "uploads/1781891618231_File_Edit__38___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781891618706_File_Edit__51___Large_.jpg",
+        "url": "uploads/1781891618263_File_Edit__50___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781891618774_File_Edit__44___Large_.jpg",
+        "url": "uploads/1781891618306_File_Edit__48___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781891618819_File_Edit__12___Large_.jpg",
+        "url": "uploads/1781891618333_File_Edit__53___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618371_File_Edit__57___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618404_File_Edit__68___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618447_File_Edit__73___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618478_File_Edit__17___Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781891618521_File_Edit__9___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618563_File_Edit__39___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618641_File_Edit__42___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618706_File_Edit__51___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618774_File_Edit__44___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618819_File_Edit__12___Large_.jpg",
         "layout": "full",
         "padding": false
       }
@@ -434,50 +610,50 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781888508942_kaluna_visual__25_of_47___Large_.jpg",
+    "mediaUrl": "uploads/1781888508942_kaluna_visual__25_of_47___Large_.jpg",
     "gallery": [
       {
-        "url": "/uploads/1781888508966_kaluna_visual__24_of_47___Large_.jpg",
+        "url": "uploads/1781888508966_kaluna_visual__24_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888508989_kaluna_visual__40_of_47___Large_.jpg",
+        "url": "uploads/1781888508989_kaluna_visual__40_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888509025_kaluna_visual__43_of_47___Large_.jpg",
+        "url": "uploads/1781888509025_kaluna_visual__43_of_47___Large_.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1781888509049_kaluna_visual__2_of_47___Large_.jpg",
+        "url": "uploads/1781888509049_kaluna_visual__2_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888509083_kaluna_visual__7_of_47___Large_.jpg",
+        "url": "uploads/1781888509083_kaluna_visual__7_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888509120_kaluna_visual__10_of_47___Large_.jpg",
+        "url": "uploads/1781888509120_kaluna_visual__10_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888509141_kaluna_visual__16_of_47___Large_.jpg",
+        "url": "uploads/1781888509141_kaluna_visual__16_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888509164_kaluna_visual__18_of_47___Large_.jpg",
+        "url": "uploads/1781888509164_kaluna_visual__18_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1781888509186_kaluna_visual__22_of_47___Large_.jpg",
+        "url": "uploads/1781888509186_kaluna_visual__22_of_47___Large_.jpg",
         "layout": "full",
         "padding": false
       }
@@ -495,16 +671,16 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781888355170_Kaluna_visual-6__Large_.png",
+    "mediaUrl": "uploads/1781888355170_Kaluna_visual-6__Large_.png",
     "gallery": [
-      "/uploads/1781888355214_Kaluna_visual-13__Large_.png",
-      "/uploads/1781888355241_Kaluna_visual-17__Large_.png",
-      "/uploads/1781888355271_Kaluna_visual-28__Large_.png",
-      "/uploads/1781888355301_Kaluna_visual-35__Large_.png",
-      "/uploads/1781888355356_Kaluna_visual-2__Large_.png",
-      "/uploads/1781888355437_Kaluna_visual-3__Large_.png",
-      "/uploads/1781888355525_Kaluna_visual-7__Large_.png",
-      "/uploads/1781888355577_Kaluna_visual-8__Large_.png"
+      "uploads/1781888355214_Kaluna_visual-13__Large_.png",
+      "uploads/1781888355241_Kaluna_visual-17__Large_.png",
+      "uploads/1781888355271_Kaluna_visual-28__Large_.png",
+      "uploads/1781888355301_Kaluna_visual-35__Large_.png",
+      "uploads/1781888355356_Kaluna_visual-2__Large_.png",
+      "uploads/1781888355437_Kaluna_visual-3__Large_.png",
+      "uploads/1781888355525_Kaluna_visual-7__Large_.png",
+      "uploads/1781888355577_Kaluna_visual-8__Large_.png"
     ]
   },
   {
@@ -519,18 +695,18 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781888232154_Kaluna_visual__1_of_54___Large_.jpg",
+    "mediaUrl": "uploads/1781888232154_Kaluna_visual__1_of_54___Large_.jpg",
     "gallery": [
-      "/uploads/1781888232176_Kaluna_visual__31_of_54___Large_.jpg",
-      "/uploads/1781888232195_Kaluna_visual__41_of_54___Large_.jpg",
-      "/uploads/1781888232213_Kaluna_visual__43_of_54___Large_.jpg",
-      "/uploads/1781888232250_Kaluna_visual__44_of_54___Large_.jpg",
-      "/uploads/1781888232278_Kaluna_visual__8_of_54___Large_.jpg",
-      "/uploads/1781888232307_Kaluna_visual__13_of_54___Large_.jpg",
-      "/uploads/1781888232333_Kaluna_visual__16_of_54___Large_.jpg",
-      "/uploads/1781888232354_Kaluna_visual__18_of_54___Large_.jpg",
-      "/uploads/1781888232372_Kaluna_visual__24_of_54___Large_.jpg",
-      "/uploads/1781888232415_Kaluna_visual__25_of_54___Large_.jpg"
+      "uploads/1781888232176_Kaluna_visual__31_of_54___Large_.jpg",
+      "uploads/1781888232195_Kaluna_visual__41_of_54___Large_.jpg",
+      "uploads/1781888232213_Kaluna_visual__43_of_54___Large_.jpg",
+      "uploads/1781888232250_Kaluna_visual__44_of_54___Large_.jpg",
+      "uploads/1781888232278_Kaluna_visual__8_of_54___Large_.jpg",
+      "uploads/1781888232307_Kaluna_visual__13_of_54___Large_.jpg",
+      "uploads/1781888232333_Kaluna_visual__16_of_54___Large_.jpg",
+      "uploads/1781888232354_Kaluna_visual__18_of_54___Large_.jpg",
+      "uploads/1781888232372_Kaluna_visual__24_of_54___Large_.jpg",
+      "uploads/1781888232415_Kaluna_visual__25_of_54___Large_.jpg"
     ]
   },
   {
@@ -545,20 +721,20 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781888029017_Kaluna_visual-52__35___Large_.png",
+    "mediaUrl": "uploads/1781888029017_Kaluna_visual-52__35___Large_.png",
     "gallery": [
-      "/uploads/1781888029070_Kaluna_visual-52__50___Large_.png",
-      "/uploads/1781888029113_Kaluna_visual-52__53___Large_.png",
-      "/uploads/1781888029164_Kaluna_visual-52__2___Large_.png",
-      "/uploads/1781888029230_Kaluna_visual-52__3___Large_.png",
-      "/uploads/1781888029270_Kaluna_visual-52__6___Large_.png",
-      "/uploads/1781888029329_Kaluna_visual-52__13___Large_.png",
-      "/uploads/1781888029369_Kaluna_visual-52__16___Large_.png",
-      "/uploads/1781888029403_Kaluna_visual-52__17___Large_.png",
-      "/uploads/1781888029449_Kaluna_visual-52__20___Large_.png",
-      "/uploads/1781888029495_Kaluna_visual-52__31___Large_.png",
-      "/uploads/1781888029521_Kaluna_visual-52__36___Large_.png",
-      "/uploads/1781888029580_Kaluna_visual-52__44___Large_.png"
+      "uploads/1781888029070_Kaluna_visual-52__50___Large_.png",
+      "uploads/1781888029113_Kaluna_visual-52__53___Large_.png",
+      "uploads/1781888029164_Kaluna_visual-52__2___Large_.png",
+      "uploads/1781888029230_Kaluna_visual-52__3___Large_.png",
+      "uploads/1781888029270_Kaluna_visual-52__6___Large_.png",
+      "uploads/1781888029329_Kaluna_visual-52__13___Large_.png",
+      "uploads/1781888029369_Kaluna_visual-52__16___Large_.png",
+      "uploads/1781888029403_Kaluna_visual-52__17___Large_.png",
+      "uploads/1781888029449_Kaluna_visual-52__20___Large_.png",
+      "uploads/1781888029495_Kaluna_visual-52__31___Large_.png",
+      "uploads/1781888029521_Kaluna_visual-52__36___Large_.png",
+      "uploads/1781888029580_Kaluna_visual-52__44___Large_.png"
     ]
   },
   {
@@ -573,15 +749,15 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781887745212_Kaluna_visual-2__Large_.jpg",
+    "mediaUrl": "uploads/1781887745212_Kaluna_visual-2__Large_.jpg",
     "gallery": [
-      "/uploads/1781887745283_Kaluna_visual-29__Large_.jpg",
-      "/uploads/1781887745344_Kaluna_visual-39__Large_.jpg",
-      "/uploads/1781887745384_Kaluna_visual-6__Large_.jpg",
-      "/uploads/1781887745422_Kaluna_visual-10__Large_.jpg",
-      "/uploads/1781887745453_Kaluna_visual-15__Large_.jpg",
-      "/uploads/1781887745490_Kaluna_visual-20__Large_.jpg",
-      "/uploads/1781887745552_Kaluna_visual-22__Large_.jpg"
+      "uploads/1781887745283_Kaluna_visual-29__Large_.jpg",
+      "uploads/1781887745344_Kaluna_visual-39__Large_.jpg",
+      "uploads/1781887745384_Kaluna_visual-6__Large_.jpg",
+      "uploads/1781887745422_Kaluna_visual-10__Large_.jpg",
+      "uploads/1781887745453_Kaluna_visual-15__Large_.jpg",
+      "uploads/1781887745490_Kaluna_visual-20__Large_.jpg",
+      "uploads/1781887745552_Kaluna_visual-22__Large_.jpg"
     ]
   },
   {
@@ -596,13 +772,13 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781887537361_Kaluna_visual-1__Large_.jpg",
+    "mediaUrl": "uploads/1781887537361_Kaluna_visual-1__Large_.jpg",
     "gallery": [
-      "/uploads/1781887537397_Kaluna_visual-7__Large_.jpg",
-      "/uploads/1781887537433_Kaluna_visual-16__Large_.jpg",
-      "/uploads/1781887537461_Kaluna_visual-17__Large_.jpg",
-      "/uploads/1781887537504_Kaluna_visual-25__Large_.jpg",
-      "/uploads/1781887537566_Kaluna_visual-31__Large_.jpg"
+      "uploads/1781887537397_Kaluna_visual-7__Large_.jpg",
+      "uploads/1781887537433_Kaluna_visual-16__Large_.jpg",
+      "uploads/1781887537461_Kaluna_visual-17__Large_.jpg",
+      "uploads/1781887537504_Kaluna_visual-25__Large_.jpg",
+      "uploads/1781887537566_Kaluna_visual-31__Large_.jpg"
     ]
   }
 ]
