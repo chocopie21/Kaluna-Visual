@@ -52,11 +52,6 @@
         "padding": false
       },
       {
-        "url": "uploads/1782405112015_DSCF0499__Large_.jpg",
-        "layout": "full",
-        "padding": true
-      },
-      {
         "url": "uploads/1782405112039_DSCF0483__Large_.jpg",
         "layout": "full",
         "padding": false
@@ -73,11 +68,6 @@
       },
       {
         "url": "uploads/1782405112150_DSCF0508__Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "uploads/1783395154286_SAMPLE-33__Large_.jpg",
         "layout": "full",
         "padding": false
       },
@@ -102,16 +92,6 @@
         "padding": false
       },
       {
-        "url": "uploads/1783396559486_KIAS_FEST__138___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
-        "url": "uploads/1783396559520_KIAS_FEST__125___Large_.jpg",
-        "layout": "full",
-        "padding": false
-      },
-      {
         "url": "uploads/1783396559559_KIAS_FEST__145___Large_.jpg",
         "layout": "full",
         "padding": false
@@ -120,11 +100,6 @@
         "url": "uploads/1783396559584_KIAS_FEST__171___Large_.jpg",
         "layout": "full",
         "padding": true
-      },
-      {
-        "url": "uploads/1783396559608_KIAS_FEST__169___Large_.jpg",
-        "layout": "full",
-        "padding": false
       }
     ],
     "backgroundColor": ""
@@ -167,9 +142,177 @@
     "backgroundColor": ""
   },
   {
+    "id": "1783464229388",
+    "title": "Desain Feeds",
+    "category": "design",
+    "description": "Desain Feed Intagram @perkara_telu",
+    "client": "Perkara",
+    "date": "",
+    "tools": [
+      "Figma",
+      "Photoshop"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1783464229235_PERKARA.jpg",
+    "gallery": [
+      {
+        "url": "/uploads/1783464229287_Slice_1.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464229337_Slice_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464229374_Slice_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464706638_ada_apa_di_krw.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464706716_Slice_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464706763_Slice_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464706871_potongan_kiri.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464706940_potongan_tengah.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464706995_potongan_kanan.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707060_Recap_FM_1.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707153_Recap_FM_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707214_Recap_FM_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707291_Frame_84.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707368_Frame_88.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707436_Frame_85.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707521_Frame_87.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707601_Frame_86.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707663_slide_6.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707734_slide_4.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707800_slide_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707864_slide_2.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707936_slide_5.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464707997_slide_6.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464708059_slide_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464708121_slide_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464708204_slide_4.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464708287_slide_5.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464708364_happy_new_year.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1783464708445_hari_pahlawan.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "/uploads/1783464708535_isra_miraj.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
     "id": "1783398842988",
     "title": "Sertijab Organisasi",
-    "category": "photography",
+    "category": "videography",
     "description": "MPK OSIS SMKN 2 Karawang",
     "client": "",
     "date": "",
