@@ -142,6 +142,132 @@
     "backgroundColor": ""
   },
   {
+    "id": "1784246986476",
+    "title": "RAVEN CLAW ",
+    "category": "photography",
+    "description": "Perpisahan Raven Claw",
+    "client": "SMAN 6 Karawang",
+    "date": "",
+    "tools": [
+      "Lightroom",
+      "Premier Pro"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784246984756_653997906_18096079453834017_5674396985173935682_n.webp",
+    "gallery": [
+      {
+        "url": "/uploads/1784246984856_653997906_18096079453834017_5674396985173935682_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246984966_652770033_18097257596477074_8312658011282469595_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985097_649129877_17945357231985066_7876263064792428908_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985219_650529064_18002297372897356_9016666545900794983_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985314_656733343_18085783949249935_3065862111743054649_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985401_654244535_18172143979399241_8713402404533452820_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985487_654116616_18099984610761300_6528088057011826381_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985574_650371688_18002458400850407_3777497349532485791_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985658_655821449_18096368252319683_6721598667587380505_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246985745_650026577_18020237783810201_3868908388032185097_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246986390_Raven_Claw_Graduation.SMA_Negeri_6_Karawang-Swiss_Bellin_Hotel__3_Mei_2023-.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784246600040",
+    "title": "RENDEZVOUS 39",
+    "category": "photography",
+    "description": "Perpisahan RENDEZVOUS",
+    "client": "SMAN 3 Karawang",
+    "date": "",
+    "tools": [
+      "Lightroom",
+      "Premier pro"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784246596201_1bf5a1224232995.6807a6ba0e7f4.webp",
+    "gallery": [
+      {
+        "url": "/uploads/1784246596490_5d04cc224232995.6807a6ba0d76a.webp",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "/uploads/1784246596858_a8bfd7224232995.6807a6ba0ca2b.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246597210_c92617224232995.6807a6ba0ed46.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246597550_3bd7d8224232995.6807a6ba0c1c4.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246597915_0d1d3e224232995.6807a6ba0dfb2.webp",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "/uploads/1784246598288_95a5de224232995.6807a6ba0d0a4.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784246599854_SCHOOL.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
     "id": "1783464229388",
     "title": "Desain Feeds",
     "category": "design",
