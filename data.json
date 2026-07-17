@@ -1,5 +1,70 @@
 [
   {
+    "id": "1784317950654",
+    "title": "Seminar Parenting SD Puri Artha",
+    "category": "photography",
+    "description": "Seminar Parenting SD Puri Artha",
+    "client": "SD Puri Artha",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784317945937_05df07229671591.6868e62fca2f7.webp",
+    "gallery": [
+      {
+        "url": "/uploads/1784317946308_b0345f229671591.6868e62fcae02.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317946612_8256b2229671591.6868e62fcb5be.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317946911_9efbe0229671591.6868e62fcbb9d.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317947249_6a2442229671591.6868e62fcc76c.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317947595_71ddc1229671591.6868e62fcc0b5.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317947917_5625e3229671591.6868e62fc8fbd.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317948278_87df7d229671591.6868e62fc857f.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317948568_c9f2cd229671591.6868e62fc9979.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317948861_58dae2229671591.6868e62fca8c6.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317950475_Seminar_Parenting_SD_Puri_Artha_-_Kaluna_visual.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
     "id": "1782405112163",
     "title": "Kias Fest",
     "category": "photography",
@@ -154,62 +219,84 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1784246984756_653997906_18096079453834017_5674396985173935682_n.webp",
+    "mediaUrl": "uploads/1784246984756_653997906_18096079453834017_5674396985173935682_n.webp",
     "gallery": [
       {
-        "url": "/uploads/1784246984856_653997906_18096079453834017_5674396985173935682_n.webp",
+        "url": "uploads/1784246984856_653997906_18096079453834017_5674396985173935682_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246984966_652770033_18097257596477074_8312658011282469595_n.webp",
+        "url": "uploads/1784246984966_652770033_18097257596477074_8312658011282469595_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985097_649129877_17945357231985066_7876263064792428908_n.webp",
+        "url": "uploads/1784246985097_649129877_17945357231985066_7876263064792428908_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985219_650529064_18002297372897356_9016666545900794983_n.webp",
+        "url": "uploads/1784246985219_650529064_18002297372897356_9016666545900794983_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985314_656733343_18085783949249935_3065862111743054649_n.webp",
+        "url": "uploads/1784246985314_656733343_18085783949249935_3065862111743054649_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985401_654244535_18172143979399241_8713402404533452820_n.webp",
+        "url": "uploads/1784246985401_654244535_18172143979399241_8713402404533452820_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985487_654116616_18099984610761300_6528088057011826381_n.webp",
+        "url": "uploads/1784246985487_654116616_18099984610761300_6528088057011826381_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985574_650371688_18002458400850407_3777497349532485791_n.webp",
+        "url": "uploads/1784246985574_650371688_18002458400850407_3777497349532485791_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985658_655821449_18096368252319683_6721598667587380505_n.webp",
+        "url": "uploads/1784246985658_655821449_18096368252319683_6721598667587380505_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246985745_650026577_18020237783810201_3868908388032185097_n.webp",
+        "url": "uploads/1784246985745_650026577_18020237783810201_3868908388032185097_n.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246986390_Raven_Claw_Graduation.SMA_Negeri_6_Karawang-Swiss_Bellin_Hotel__3_Mei_2023-.mp4",
+        "url": "uploads/1784246986390_Raven_Claw_Graduation.SMA_Negeri_6_Karawang-Swiss_Bellin_Hotel__3_Mei_2023-.mp4",
         "layout": "full",
         "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784316073493",
+    "title": "Motion Graphic",
+    "category": "videography",
+    "description": "Motion Graphic",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Premier Pro"
+    ],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "uploads/1784316071960_Final.mp4",
+    "gallery": [
+      {
+        "url": "uploads/1784316073342_BTS_1.mp4",
+        "layout": "full",
+        "padding": true
       }
     ],
     "backgroundColor": ""
@@ -227,40 +314,40 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1784246596201_1bf5a1224232995.6807a6ba0e7f4.webp",
+    "mediaUrl": "uploads/1784246596201_1bf5a1224232995.6807a6ba0e7f4.webp",
     "gallery": [
       {
-        "url": "/uploads/1784246596490_5d04cc224232995.6807a6ba0d76a.webp",
+        "url": "uploads/1784246596490_5d04cc224232995.6807a6ba0d76a.webp",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1784246596858_a8bfd7224232995.6807a6ba0ca2b.webp",
+        "url": "uploads/1784246596858_a8bfd7224232995.6807a6ba0ca2b.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246597210_c92617224232995.6807a6ba0ed46.webp",
+        "url": "uploads/1784246597210_c92617224232995.6807a6ba0ed46.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246597550_3bd7d8224232995.6807a6ba0c1c4.webp",
+        "url": "uploads/1784246597550_3bd7d8224232995.6807a6ba0c1c4.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246597915_0d1d3e224232995.6807a6ba0dfb2.webp",
+        "url": "uploads/1784246597915_0d1d3e224232995.6807a6ba0dfb2.webp",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1784246598288_95a5de224232995.6807a6ba0d0a4.webp",
+        "url": "uploads/1784246598288_95a5de224232995.6807a6ba0d0a4.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784246599854_SCHOOL.mp4",
+        "url": "uploads/1784246599854_SCHOOL.mp4",
         "layout": "full",
         "padding": false
       }
@@ -280,155 +367,155 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1783464229235_PERKARA.jpg",
+    "mediaUrl": "uploads/1783464229235_PERKARA.jpg",
     "gallery": [
       {
-        "url": "/uploads/1783464229287_Slice_1.jpg",
+        "url": "uploads/1783464229287_Slice_1.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464229337_Slice_2.jpg",
+        "url": "uploads/1783464229337_Slice_2.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464229374_Slice_3.jpg",
+        "url": "uploads/1783464229374_Slice_3.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464706638_ada_apa_di_krw.jpg",
+        "url": "uploads/1783464706638_ada_apa_di_krw.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464706716_Slice_2.jpg",
+        "url": "uploads/1783464706716_Slice_2.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464706763_Slice_3.jpg",
+        "url": "uploads/1783464706763_Slice_3.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464706871_potongan_kiri.jpg",
+        "url": "uploads/1783464706871_potongan_kiri.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464706940_potongan_tengah.jpg",
+        "url": "uploads/1783464706940_potongan_tengah.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464706995_potongan_kanan.jpg",
+        "url": "uploads/1783464706995_potongan_kanan.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707060_Recap_FM_1.jpg",
+        "url": "uploads/1783464707060_Recap_FM_1.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707153_Recap_FM_2.jpg",
+        "url": "uploads/1783464707153_Recap_FM_2.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707214_Recap_FM_3.jpg",
+        "url": "uploads/1783464707214_Recap_FM_3.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707291_Frame_84.jpg",
+        "url": "uploads/1783464707291_Frame_84.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707368_Frame_88.jpg",
+        "url": "uploads/1783464707368_Frame_88.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707436_Frame_85.jpg",
+        "url": "uploads/1783464707436_Frame_85.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707521_Frame_87.jpg",
+        "url": "uploads/1783464707521_Frame_87.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707601_Frame_86.jpg",
+        "url": "uploads/1783464707601_Frame_86.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707663_slide_6.jpg",
+        "url": "uploads/1783464707663_slide_6.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707734_slide_4.jpg",
+        "url": "uploads/1783464707734_slide_4.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707800_slide_3.jpg",
+        "url": "uploads/1783464707800_slide_3.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707864_slide_2.jpg",
+        "url": "uploads/1783464707864_slide_2.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707936_slide_5.jpg",
+        "url": "uploads/1783464707936_slide_5.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1783464707997_slide_6.jpg",
+        "url": "uploads/1783464707997_slide_6.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464708059_slide_2.jpg",
+        "url": "uploads/1783464708059_slide_2.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464708121_slide_3.jpg",
+        "url": "uploads/1783464708121_slide_3.jpg",
         "layout": "third",
         "padding": false
       },
       {
-        "url": "/uploads/1783464708204_slide_4.jpg",
+        "url": "uploads/1783464708204_slide_4.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1783464708287_slide_5.jpg",
+        "url": "uploads/1783464708287_slide_5.jpg",
         "layout": "half",
         "padding": false
       },
       {
-        "url": "/uploads/1783464708364_happy_new_year.jpg",
+        "url": "uploads/1783464708364_happy_new_year.jpg",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1783464708445_hari_pahlawan.jpg",
+        "url": "uploads/1783464708445_hari_pahlawan.jpg",
         "layout": "full",
         "padding": true
       },
       {
-        "url": "/uploads/1783464708535_isra_miraj.jpg",
+        "url": "uploads/1783464708535_isra_miraj.jpg",
         "layout": "full",
         "padding": false
       }
