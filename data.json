@@ -1,5 +1,27 @@
 [
   {
+    "id": "1784585357172",
+    "title": "Web Design ",
+    "category": "uiux",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Figma"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784585356106_MacBook_Air__2022_.webp",
+    "gallery": [
+      {
+        "url": "/uploads/1784585357069_Smart_Travel_Banyuwangi_Bali_-_Google_Chrome_2026-07-21_05-08-01.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
     "id": "1784501197441",
     "title": "Kominfo",
     "category": "random",
