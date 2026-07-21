@@ -40,7 +40,7 @@
     "title": "Video Profile Himatredia",
     "category": "videography",
     "description": "",
-    "client": "",
+    "client": "HIMATREDIA",
     "date": "2025",
     "tools": [
       "Premier Pro",
@@ -51,32 +51,32 @@
     "mediaUrl": "https://youtu.be/Es-1emocMOM?si=DOfmtrwekPCGGnZ8",
     "gallery": [
       {
-        "url": "/uploads/1784501007144_Es-1emocMOM_maxres.webp",
+        "url": "uploads/1784501007144_Es-1emocMOM_maxres.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784501266761_DSC08515.webp",
+        "url": "uploads/1784501266761_DSC08515.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784501267254_DSC08518.webp",
+        "url": "uploads/1784501267254_DSC08518.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784501267727_DSC08514.webp",
+        "url": "uploads/1784501267727_DSC08514.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784501268160_DSC08516.webp",
+        "url": "uploads/1784501268160_DSC08516.webp",
         "layout": "full",
         "padding": false
       },
       {
-        "url": "/uploads/1784501268606_DSC08517.webp",
+        "url": "uploads/1784501268606_DSC08517.webp",
         "layout": "full",
         "padding": false
       }
