@@ -299,6 +299,7 @@ function App() {
     }
   };
   const [activeCategory, setActiveCategory] = useState('all');
+  const [viewMode, setViewMode] = useState('grid');
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [toasts, setToasts] = useState([]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -654,7 +655,7 @@ function App() {
     return () => {
       revealElements.forEach(el => observer.unobserve(el));
     };
-  }, [projects, activeCategory]); // Re-run on dynamic updates
+  }, [projects, activeCategory, viewMode]); // Re-run on dynamic updates
 
   // Handler to add a Toast
   const addToast = (message, type = 'success') => {
@@ -1065,6 +1066,8 @@ function App() {
             projects={projects}
             activeCategory={activeCategory}
             setActiveCategory={setActiveCategory}
+            viewMode={viewMode}
+            setViewMode={setViewMode}
             addToast={addToast}
             onTrackProjectClick={trackProjectClick}
           />

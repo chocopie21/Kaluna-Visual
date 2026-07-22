@@ -12,15 +12,15 @@ const KNOWLEDGE_BASE = [
   },
   {
     id: 'foto',
-    keywords: ['foto', 'fotografi', 'photo', 'wisuda', 'graduation', 'event', 'acara', 'portrait', 'wisudawan'],
+    keywords: ['foto', 'fotografi', 'photo', 'wisuda', 'graduation', 'event', 'acara', 'portrait', 'wisudawan', 'moto', 'motret', 'jepret'],
     answer: "📸 **Layanan Fotografi Ahmad Nafi**:\n• **Graduation & Wisuda**: Liputan foto individu/kelompok dengan color grading sinematik.\n• **Event & Acara**: Dokumentasi panggung, seminar, dan momen spesial.\n• **Portrait & Modeling**: Sesi foto konsep indoor / outdoor.\n\nSemua paket foto sudah termasuk editing & file high-resolution siap cetak!",
-    suggestions: ['Berapa harganya?', 'Lihat contoh karya', 'Chat via WhatsApp']
+    suggestions: ['Berapa harganya?', 'Berapa lama pengerjaan?', 'Chat via WhatsApp']
   },
   {
     id: 'video',
-    keywords: ['video', 'videografi', 'cinematic', 'reels', 'tiktok', 'iklan', 'commercial', 'editing', 'drone'],
-    answer: "🎬 **Layanan Videografi & Editing**:\n• **Video Sinematik**: Profile company, teaser event, & short movie.\n• **Social Media Reels / Shorts**: Video vertikal 9:16 kreatif untuk branding TikTok & Instagram.\n• **Video Commercial**: Iklan produk & promosi brand.\n\nDilengkapi perekaman resolusi 4K & animasi grafis!",
-    suggestions: ['Tanya estimasi biaya', 'Hubungi Nafi via WA']
+    keywords: ['video', 'videografi', 'cinematic', 'reels', 'tiktok', 'iklan', 'commercial', 'editing', 'drone', 'shorcut', 'shorts'],
+    answer: "🎬 **Layanan Videografi & Editing**:\n• **Video Sinematik**: Profile company, teaser event, & short movie.\n• **Social Media Reels / Shorts**: Video vertikal 9:16 kreatif untuk branding TikTok & Instagram.\n• **Video Commercial**: Iklan produk & promosi brand.\n\nDilengkapi perekaman resolusi 4K & animasi grafis drone aerial!",
+    suggestions: ['Kamera & Drone apa?', 'Berapa lama edit video?']
   },
   {
     id: 'desain',
@@ -36,22 +36,47 @@ const KNOWLEDGE_BASE = [
   },
   {
     id: 'harga',
-    keywords: ['harga', 'biaya', 'tarif', 'price', 'budget', 'paket', 'bayar', 'sewa', 'berapa', 'ongkos'],
-    answer: "💰 **Estimasi Biaya & Penawaran Paket**:\nTarif bersifat menyesuaikan (*custom*) tergantung jenis proyek, lokasi, dan durasi acara kamu.\n\nUntuk mendapatkan **pricelist khusus** atau konsultasi penyesuaian budget, kamu bisa mengobrol langsung dengan Nafi via WhatsApp!",
+    keywords: ['harga', 'biaya', 'tarif', 'price', 'budget', 'paket', 'bayar', 'sewa', 'berapa', 'ongkos', 'pricelist'],
+    answer: "💰 **Estimasi Biaya & Penawaran Paket**:\nUntuk mendapatkan **pricelist terlengkap** atau konsultasi penyesuaian budget proyek kamu, kamu bisa mengobrol langsung dengan Nafi via WhatsApp ya! Penawaran harga bersifat fleksibel menyesuaikan konsep visual kamu.",
     action: { label: 'Dapatkan Pricelist via WhatsApp', url: 'https://wa.me/6283815906766?text=Halo%20Nafi,%20saya%20ingin%20tanya%20pricelist%20jasa' },
-    suggestions: ['Layanan fotografi', 'Layanan videografi']
+    suggestions: ['Ketentuan Pembayaran / DP', 'Berapa lama pengerjaan?']
+  },
+  {
+    id: 'alat',
+    keywords: ['kamera', 'camera', 'gear', 'dji', 'sony', 'lens', 'lensa', 'drone', 'aerial', 'alat', 'shooting', 'record'],
+    answer: "📷 **Gear & Kamera Tempur**:\nUntuk menjamin hasil visual premium (Full HD/4K), Ahmad Nafi menggunakan ekosistem kamera profesional **Sony** (kamera & lensa premium) serta **DJI Drone** untuk pengambilan footage udara yang sinematik.",
+    suggestions: ['Lihat karya foto', 'Lihat karya video']
+  },
+  {
+    id: 'durasi',
+    keywords: ['durasi', 'waktu', 'lama', 'hari', 'timeline', 'deadline', 'kapan', 'selesai', 'cepat', 'pengerjaan', 'proses'],
+    answer: "⏱️ **Estimasi Waktu Pengerjaan (Timeline)**:\n• 📸 **Foto Wisuda**: Selesai dalam **1-2 hari**.\n• 📸 **Foto Event / Acara**: Selesai dalam **3 hari**.\n• 🎬 **Video Reels / Teaser**: Selesai dalam **3-5 hari**.\n• 🎨 **Desain Logo / UI/UX**: Selesai dalam **1-3 hari**.\n\n*Catatan: Durasi pengerjaan dihitung sejak sesi produksi selesai / aset terkumpul.*",
+    suggestions: ['Ketentuan Pembayaran / DP', 'Hubungi WhatsApp Nafi']
+  },
+  {
+    id: 'dp',
+    keywords: ['dp', 'booking', 'pembayaran', 'down payment', 'rekening', 'lunas', 'transfer', 'tata cara', 'sistem'],
+    answer: "📅 **Sistem Pembayaran & Booking Jadwal**:\n• **Down Payment (DP)**: Minimal **50% di awal** untuk mengamankan slot tanggal jadwal kerja.\n• **Pelunasan**: Dilakukan setelah proyek selesai dan file final siap dikirimkan kepada kamu.",
+    suggestions: ['Hubungi WhatsApp Nafi', 'Berapa lama pengerjaan?']
   },
   {
     id: 'pendidikan',
-    keywords: ['kuliah', 'pendidikan', 'jurusan', 'sekolah', 'edukasi', 'telkom', 'sman 6', 'smpn 5', 'studi'],
-    answer: "🎓 **Riwayat Pendidikan Ahmad Nafi**:\n1. **Telkom University** (2024 - Sekarang)\n   S1 Terapan Digital Creative Multimedia.\n2. **SMAN 6 Karawang** (2021 - 2024)\n3. **SMPN 5 Karawang** (2018 - 2021)",
-    suggestions: ['Pengalaman kerja', 'Layanan kreatif']
+    keywords: ['kuliah', 'pendidikan', 'jurusan', 'sekolah', 'edukasi', 'telkom', 'sman 6', 'smpn 5', 'studi', 'mahasiswa'],
+    answer: "🎓 **Status & Riwayat Pendidikan**:\nSaat ini Ahmad Nafi adalah **mahasiswa aktif** di **Telkom University** (S1 Terapan Digital Creative Multimedia, 2024 - Sekarang).\n\nSebelumnya, Nafi lulus dari SMAN 6 Karawang (2021 - 2024) dan SMPN 5 Karawang (2018 - 2021).",
+    suggestions: ['Tawaran freelance / magang', 'Pengalaman kerja']
   },
   {
     id: 'pengalaman',
     keywords: ['pengalaman', 'kerja', 'kaluna', 'bisnis', 'karir', 'usul', 'portofolio', 'karya'],
     answer: "💼 **Pengalaman Profesional**:\n• **Co-Founder & Visual Creator** di *Kaluna Visual* (2023 - Sekarang) – Mengelola tim produksi fotografi & videografi wisuda.\n• **Graphic & UI/UX Designer** (2024 - Sekarang) – Mengerjakan proyek desain brand & produk digital interaktif.",
-    suggestions: ['Lihat karya di website', 'Hubungi Nafi']
+    suggestions: ['Tawaran freelance / magang', 'Hubungi Nafi']
+  },
+  {
+    id: 'freelance',
+    keywords: ['freelance', 'kontrak', 'bulanan', 'magang', 'internship', 'fulltime', 'remote', 'kerja sama', 'hire'],
+    answer: "💼 **Ketersediaan Kerja Jangka Panjang & Magang**:\nSebagai mahasiswa aktif, Ahmad Nafi sangat terbuka untuk tawaran freelance bulanan, magang, atau kolaborasi visual lainnya. \n\nUntuk mencocokkan jadwal kuliah dan detail kontrak kerja, silakan hubungi langsung via WhatsApp untuk diskusi lebih lanjut!",
+    action: { label: 'Diskusikan Kerja Sama via WA', url: 'https://wa.me/6283815906766?text=Halo%20Nafi,%20saya%20tertarik%20untuk%20menawarkan%20kerja%20sama%20freelance/magang' },
+    suggestions: ['Kontak resmi', 'Domisili di mana?']
   },
   {
     id: 'lokasi',
@@ -71,7 +96,7 @@ const KNOWLEDGE_BASE = [
 const DEFAULT_RESPONSE = {
   answer: "Pertanyaan kamu sangat menarik! Mengenai detail pengerjaan, penyesuaian konsep visual, atau booking tanggal acara, kamu bisa berkonsultasi langsung dengan Ahmad Nafi via WhatsApp.",
   action: { label: 'Tanya Langsung via WhatsApp', url: 'https://wa.me/6283815906766?text=Halo%20Nafi,%20saya%20ingin%20berkonsultasi' },
-  suggestions: ['📸 Layanan Fotografi', '🎬 Layanan Videografi', '🎓 Pendidikan Nafi']
+  suggestions: ['📸 Layanan Fotografi', '🎬 Layanan Videografi', '⏱️ Durasi Pengerjaan']
 };
 
 export default function ChatBotButton() {
@@ -99,15 +124,33 @@ export default function ChatBotButton() {
   }, [messages, isOpen, isTyping]);
 
   const findBestAnswer = (query) => {
-    const q = query.toLowerCase();
+    const cleanQuery = query.toLowerCase()
+      .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    
+    const queryWords = cleanQuery.split(' ').filter(w => w.length > 1);
+    
     let bestMatch = null;
     let maxScore = 0;
 
     for (const item of KNOWLEDGE_BASE) {
       let score = 0;
       for (const kw of item.keywords) {
-        if (q.includes(kw.toLowerCase())) {
-          score += kw.length;
+        const kwLower = kw.toLowerCase();
+        
+        // 1. Direct phrase matching (high priority)
+        if (cleanQuery.includes(kwLower)) {
+          score += kwLower.length * 3;
+        }
+        
+        // 2. Individual word matching
+        for (const qw of queryWords) {
+          if (qw === kwLower) {
+            score += 5;
+          } else if (kwLower.includes(qw) && qw.length > 2) {
+            score += qw.length;
+          }
         }
       }
       if (score > maxScore) {

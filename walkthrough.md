@@ -154,8 +154,34 @@ Implemented the React Bits `GlassIcons` 3D perspective architecture into the flo
 
 ---
 
-## 26. Mobile Viewport Overlap & Spacing Fixes 📱
+## 29. Portfolio View Mode Switcher (Grid vs List) 📂
 
-- **Eliminated Button Overlap**: Set [ChatBotButton.css](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/ChatBotButton.css#L158-L168) right position to `5.2rem` and [WhatsAppButton.css](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/WhatsAppButton.css#L147-L157) right position to `1.25rem` with explicit `font-size: 0.75rem`. Both 3D buttons now sit cleanly side-by-side with zero overlap.
-- **Fixed Header Bleed**: Updated `.hero` top padding in [index.css](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/index.css#L2642-L2650) to `115px` on mobile screens, providing ample space so the fixed navbar header never overlaps the "TENTANG SAYA" tagline.
-- **Removed Massive Blank Space**: Set `min-height: auto` on `.hero` and `.about-grid` for mobile viewports, removing the large empty black gap when 3D Lanyard is hidden on mobile screens.
+- **View Mode Switcher UI**: Positioned an elegant glassmorphic toggle (`LayoutGrid` and `List` icon) in [PortfolioGrid.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/PortfolioGrid.jsx#L225-L277) to let visitors instantly switch layouts.
+- **Typography List Layout**: Programmed a premium line-by-line list view showing project numbers, categories, and titles with clean CSS animations.
+- **Spring-Loaded Mouse-Following Preview**: Integrated a spring-physics-driven [motion.div](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/PortfolioGrid.jsx#L313-L352) that floats and smoothly follows the cursor, showing a large preview image of each project on hover.
+
+---
+
+## 30. View Mode Switcher ReferenceError Fix 🐛
+
+- **Fixed Blank Screen**: Added the missing `handleListItemMouseEnter` and `handleListItemMouseLeave` event handlers to resolve the React runtime ReferenceError which caused the screen to crash.
+
+---
+
+## 31. List View Hover Video Thumbnail Fix 🎬
+
+- **Auto-rendered Video Elements**: Programmed the floating hover preview in [PortfolioGrid.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/PortfolioGrid.jsx#L406-L430) to automatically detect `.mp4` video files and render a `<video>` tag with `#t=0.001` metadata preload instead of an `<img>` tag. This fixes the broken image placeholder and displays a clean video first-frame preview.
+
+---
+
+## 32. View Mode Switcher Scroll Reveal State Lift Fix 👁️
+
+- **Lifting State to App.jsx**: Lifted the `viewMode` state to [App.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/App.jsx#L301) and passed it down to `PortfolioGrid` as a prop.
+- **Scroll Observer Dependency Re-run**: Added `viewMode` to the IntersectionObserver dependency array in [App.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/App.jsx#L658). This forces the scroll-reveal observer to instantly detect and observe the newly mounted `.reveal` grid cards when the user switches back from List to Grid mode, resolving the invisible/black content bug.
+
+---
+
+## 33. Switcher Spring Animation & Balanced Desktop Layout 💫
+
+- **Spring-Physics Sliding Pill**: Upgraded [PortfolioGrid.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/PortfolioGrid.jsx#L254-L318) view switcher buttons to use Framer Motion `<motion.div layoutId="activeViewPill">`. Now, switching between Grid and List modes triggers a smooth sliding orange circle animation underneath the icons.
+- **Symmetric Centering Layout**: Wrapped the controls bar in a `.portfolio-controls` flex container. Configured a left `.controls-spacer` (88px) to balance the width of the right `.switcher-wrapper` (88px), keeping the categories tabs perfectly centered on the screen, aligned neatly with the content.

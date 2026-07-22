@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, Play, X, Calendar, User, Briefcase, Cpu, Link } from 'lucide-react';
+import { ArrowUpRight, Play, X, Calendar, User, Briefcase, Cpu, Link, Grid, List } from 'lucide-react';
 import TiltedCard from './TiltedCard';
 import Masonry from './Masonry';
 import Lenis from 'lenis';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 
 const isVideoUrl = (url) => {
   if (!url) return false;
@@ -39,8 +39,22 @@ const getYouTubeThumbnail = (url) => {
   return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : '';
 };
 
-const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, addToast, onTrackProjectClick }) => {
+const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewMode, setViewMode, addToast, onTrackProjectClick }) => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleListItemMouseMove = (e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleListItemMouseEnter = (project) => {
+    setHoveredProject(project);
+  };
+
+  const handleListItemMouseLeave = () => {
+    setHoveredProject(null);
+  };
 
   useEffect(() => {
     if (selectedProject && onTrackProjectClick) {
@@ -196,27 +210,126 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, addTo
 
   return (
     <div className="portfolio-content">
-      {/* Categories Filter Tabs Centered Wrapper */}
-      <div className="filter-tabs-wrapper" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-        <div className="filter-tabs" role="group" aria-label="Filter kategori portofolio">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              className={`filter-tab ${activeCategory === cat.id ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat.id)}
-              aria-pressed={activeCategory === cat.id}
-              style={{ position: 'relative' }}
-            >
-              {activeCategory === cat.id && (
-                <motion.div
-                  layoutId="activeCategoryPill"
-                  className="filter-tab-active-pill"
-                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                />
-              )}
-              <span className="filter-tab-text">{cat.label}</span>
-            </button>
-          ))}
+      {/* Centered Portfolio Controls Bar */}
+      <div className="portfolio-controls">
+        {/* Left Spacer to balance centering of filter tabs */}
+        <div className="controls-spacer" style={{ width: '88px' }} />
+        
+        {/* Categories Filter Tabs Centered Wrapper */}
+        <div className="filter-tabs-wrapper" style={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
+          <div className="filter-tabs" role="group" aria-label="Filter kategori portofolio">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                className={`filter-tab ${activeCategory === cat.id ? 'active' : ''}`}
+                onClick={() => setActiveCategory(cat.id)}
+                aria-pressed={activeCategory === cat.id}
+                style={{ position: 'relative' }}
+              >
+                {activeCategory === cat.id && (
+                  <motion.div
+                    layoutId="activeCategoryPill"
+                    className="filter-tab-active-pill"
+                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                  />
+                )}
+                <span className="filter-tab-text">{cat.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* View Switcher Toggle on the Right */}
+        <div className="switcher-wrapper" style={{ width: '88px', display: 'flex', justifyContent: 'flex-end' }}>
+          {activeCategory !== 'random' && (
+            <div className="view-switcher-toggle" style={{
+              display: 'flex',
+              background: 'var(--bg-navbar, rgba(255, 255, 255, 0.45))',
+              backdropFilter: 'blur(20px)',
+              border: '1px solid var(--border-color)',
+              borderRadius: '24px',
+              padding: '0.25rem',
+              gap: '0.15rem',
+              position: 'relative'
+            }}>
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`switcher-btn ${viewMode === 'grid' ? 'active' : ''}`}
+                style={{
+                  position: 'relative',
+                  background: 'transparent',
+                  color: viewMode === 'grid' ? 'white' : 'var(--text-secondary)',
+                  border: 'none',
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'color 0.25s ease',
+                  zIndex: 2
+                }}
+                aria-label="Grid View"
+              >
+                {viewMode === 'grid' && (
+                  <motion.div
+                    layoutId="activeViewPill"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      borderRadius: '50%',
+                      background: 'var(--accent-color, #e54d3b)',
+                      zIndex: -1
+                    }}
+                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                  />
+                )}
+                <Grid size={16} />
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`switcher-btn ${viewMode === 'list' ? 'active' : ''}`}
+                style={{
+                  position: 'relative',
+                  background: 'transparent',
+                  color: viewMode === 'list' ? 'white' : 'var(--text-secondary)',
+                  border: 'none',
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'color 0.25s ease',
+                  zIndex: 2
+                }}
+                aria-label="List View"
+              >
+                {viewMode === 'list' && (
+                  <motion.div
+                    layoutId="activeViewPill"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      borderRadius: '50%',
+                      background: 'var(--accent-color, #e54d3b)',
+                      zIndex: -1
+                    }}
+                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                  />
+                )}
+                <List size={16} />
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -246,6 +359,123 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, addTo
             blurToFocus={true}
             colorShiftOnHover={false}
           />
+        ) : viewMode === 'list' ? (
+          <div className="portfolio-list">
+            {filteredProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="portfolio-list-item"
+                onMouseEnter={() => handleListItemMouseEnter(project)}
+                onMouseLeave={handleListItemMouseLeave}
+                onMouseMove={handleListItemMouseMove}
+                onClick={() => setSelectedProject(project)}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
+                  <span className="list-item-number" style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: '1rem',
+                    color: 'var(--text-tertiary)',
+                    fontWeight: '600'
+                  }}>
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span className="list-item-category" style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: '0.8rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.15em',
+                    color: 'var(--accent-color)',
+                    fontWeight: '700'
+                  }}>
+                    {getCategoryLabel(project.category)}
+                  </span>
+                  <h3 className="list-item-title" style={{
+                    fontFamily: 'var(--font-serif)',
+                    fontSize: 'clamp(1.2rem, 3vw, 2.2rem)',
+                    fontWeight: '400',
+                    margin: 0,
+                    color: 'var(--text-primary)',
+                    transition: 'all 0.3s ease'
+                  }}>
+                    {project.title}
+                  </h3>
+                </div>
+                <div className="list-item-arrow" style={{
+                  color: 'var(--text-secondary)',
+                  opacity: 0.5,
+                  transform: 'scale(1)',
+                  transition: 'all 0.3s ease'
+                }}>
+                  <ArrowUpRight size={28} />
+                </div>
+              </div>
+            ))}
+
+            {/* Floating Hover Preview Card */}
+            <AnimatePresence>
+              {hoveredProject && (
+                <motion.div
+                  className="floating-list-preview"
+                  initial={{ opacity: 0, scale: 0.7, rotate: -5 }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1, 
+                    rotate: 0,
+                    x: mousePosition.x + 30,
+                    y: mousePosition.y - 120
+                  }}
+                  exit={{ opacity: 0, scale: 0.7, rotate: 5 }}
+                  transition={{ 
+                    type: 'spring', 
+                    stiffness: 400, 
+                    damping: 28,
+                    x: { type: 'spring', stiffness: 200, damping: 20 },
+                    y: { type: 'spring', stiffness: 200, damping: 20 }
+                  }}
+                  style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    pointerEvents: 'none',
+                    zIndex: 9999,
+                    width: '320px',
+                    aspectRatio: '4/3',
+                    borderRadius: '16px',
+                    overflow: 'hidden',
+                    boxShadow: '0 20px 50px rgba(0,0,0,0.4)',
+                    border: '1px solid rgba(255,255,255,0.15)',
+                    background: '#121110'
+                  }}
+                >
+                  {(() => {
+                    const isVid = hoveredProject.mediaType === 'video' && !isYouTubeUrl(hoveredProject.mediaUrl);
+                    const posterImage = hoveredProject.poster || (hoveredProject.gallery && hoveredProject.gallery.find(g => g.url && !g.url.match(/\.(mp4|webm|ogg|mov)$/i))?.url) || '';
+                    
+                    if (isVid && !posterImage) {
+                      return (
+                        <video
+                          src={`${hoveredProject.mediaUrl}#t=0.001`}
+                          preload="metadata"
+                          muted
+                          playsInline
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        />
+                      );
+                    }
+                    
+                    const imgSrc = posterImage || (isYouTubeUrl(hoveredProject.mediaUrl) ? getYouTubeThumbnail(hoveredProject.mediaUrl) : hoveredProject.mediaUrl);
+                    return (
+                      <img 
+                        src={imgSrc}
+                        alt={hoveredProject.title}
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      />
+                    );
+                  })()}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         ) : (
           <div className="portfolio-grid">
             {filteredProjects.map((project, index) => (
