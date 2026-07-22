@@ -73,15 +73,11 @@
   filter: grayscale(100%) contrast(1.1);
 }
 
-/* Let SVGs fill the logoHeight container, overriding inline attributes */
+/* SVGs fill the logoHeight container, overriding inline attributes */
 .logoloop__node svg {
   height: 100% !important;
   width: auto !important;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.logoloop__item:hover .logoloop__node svg {
-  transform: scale(1.05);
 }
 
 .logoloop__link {

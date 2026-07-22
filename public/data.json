@@ -1,69 +1,963 @@
 [
   {
-    "id": "1781698607584",
-    "title": "Drone Kias Fest",
-    "category": "videography",
-    "description": "Konser Kias Fest",
+    "id": "1784585357172",
+    "title": "Web Design ",
+    "category": "uiux",
+    "description": "",
     "client": "",
     "date": "",
     "tools": [
-      "Premier Pro",
-      "Dji"
-    ],
-    "featured": true,
-    "mediaType": "video",
-    "mediaUrl": "/uploads/1781698607442_DJI_0275_2.mp4",
-    "gallery": [
-      "/uploads/1781699107265_DJI_0275_1.mp4",
-      "/uploads/1781699109666_DJI_0275_7.mp4",
-      "/uploads/1781699111147_For_Revenge.mp4",
-      "/uploads/1781699112183_tenxi.mp4"
-    ]
-  },
-  {
-    "id": "1781687931839",
-    "title": "Graduation",
-    "category": "photography",
-    "description": "Graduation",
-    "client": "",
-    "date": "",
-    "tools": [
-      "Lightroom"
+      "Figma"
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781687927047_Kaluna_visual-52__31_.png",
+    "mediaUrl": "/uploads/1784669958010_Frame_6.webp",
     "gallery": [
-      "/uploads/1781687928230_Kaluna_visual-52__2_.png",
-      "/uploads/1781687929283_Kaluna_visual-52__3_.png",
-      "/uploads/1781687930141_Kaluna_visual-52__6_.png",
-      "/uploads/1781687930936_Kaluna_visual-52__15_.png",
-      "/uploads/1781687931729_Kaluna_visual-52__18_.png"
-    ]
+      {
+        "url": "uploads/1784585357069_Smart_Travel_Banyuwangi_Bali_-_Google_Chrome_2026-07-21_05-08-01.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
   },
   {
-    "id": "1781686273101",
-    "title": "Graduation",
+    "id": "1784501197441",
+    "title": "Kominfo",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784501197419_kominfo.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500846775",
+    "title": "Video Profile Himatredia",
+    "category": "videography",
+    "description": "",
+    "client": "HIMATREDIA",
+    "date": "2025",
+    "tools": [
+      "Premier Pro",
+      "After Effect"
+    ],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "https://youtu.be/Es-1emocMOM?si=DOfmtrwekPCGGnZ8",
+    "gallery": [
+      {
+        "url": "uploads/1784501007144_Es-1emocMOM_maxres.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784501266761_DSC08515.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784501267254_DSC08518.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784501267727_DSC08514.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784501268160_DSC08516.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784501268606_DSC08517.webp",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500425541",
+    "title": "Train",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500425513_20241129_075901.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500410660",
+    "title": "WP",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500410636_DSCF1368.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500400402",
+    "title": "green",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500400375_DSC_0058.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500381677",
+    "title": "Moment",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500381664_DSC00115.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500371798",
+    "title": "Camp",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500371777_DSC_0059.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500362811",
+    "title": "Vintage",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500362790_20241101_145253.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500350494",
+    "title": "48-03",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500350460_IMG-20240913-WA0080.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500336236",
+    "title": "Kominfo",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500336209_DSC08522.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500321127",
+    "title": "Video Profile",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500321107_DSC08519.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500300665",
+    "title": "Himatredia",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500300639_IMG_7514.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784500284964",
+    "title": "Moment",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784500284941_ONE03587.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499872345",
+    "title": "Documentation",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499872308_jekstudios-423.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499712335",
+    "title": "Station",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499712317_RUIDb7ef6ed3a7e74f0782bded85c7fd9574.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499697970",
+    "title": "...",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499697939__DSC1769.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499687891",
+    "title": "Yogyakarta",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499687855_RUIDe0d7e0f903024207a8afbb62ffc76ef9.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499667311",
+    "title": "Street coffe",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499667271_RUID6ddd610e08a6410989ac25f1fc9ad5f3.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499595500",
+    "title": "Game",
+    "category": "random",
+    "description": "",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499595470_RUIDdcc6d216f38541c49459f4b7303c6d40.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499363536",
+    "title": "coffeshop",
+    "category": "random",
+    "description": "coffeshop",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1784499363493_IMG-20241206-WA0066.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784499340770",
+    "title": "sunrise",
+    "category": "random",
+    "description": "sunrise",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784499340727_20250502_053157.webp",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784317950654",
+    "title": "Seminar Parenting SD Puri Artha",
     "category": "photography",
-    "description": "Graduation",
+    "description": "Seminar Parenting SD Puri Artha",
+    "client": "SD Puri Artha",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1784317945937_05df07229671591.6868e62fca2f7.webp",
+    "gallery": [
+      {
+        "url": "/uploads/1784317946308_b0345f229671591.6868e62fcae02.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317946612_8256b2229671591.6868e62fcb5be.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317946911_9efbe0229671591.6868e62fcbb9d.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317947249_6a2442229671591.6868e62fcc76c.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317947595_71ddc1229671591.6868e62fcc0b5.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317947917_5625e3229671591.6868e62fc8fbd.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317948278_87df7d229671591.6868e62fc857f.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317948568_c9f2cd229671591.6868e62fc9979.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317948861_58dae2229671591.6868e62fca8c6.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1784317950475_Seminar_Parenting_SD_Puri_Artha_-_Kaluna_visual.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1782405112163",
+    "title": "Kias Fest",
+    "category": "photography",
+    "description": "Keseruan Kias Fest",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1783396687986_DJI_0283.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1782405111805_DSCF0466__Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405111829_DSCF0459__Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405111861_DSCF0468__Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1782405111890_DSCF0479__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405111911_DSCF0480__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405111932_DSCF0472-Edit__Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1782405111957_DSCF0481__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405111987_DSCF0468-2__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405112039_DSCF0483__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405112074_DSCF0507__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405112106_DSCF0509__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782405112150_DSCF0508__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783395154368_SAMPLE-25__Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559361_KIAS_FEST__105___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559379_KIAS_FEST__95___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559442_KIAS_FEST__96___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559559_KIAS_FEST__145___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783396559584_KIAS_FEST__171___Large_.jpg",
+        "layout": "full",
+        "padding": true
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1782404695643",
+    "title": "Kias Fest (drone)",
+    "category": "videography",
+    "description": "Drone Kias Fest",
+    "client": "Kias Fest",
+    "date": "",
+    "tools": [
+      "DJI"
+    ],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "uploads/1782404688430_DJI_0275.mp4",
+    "gallery": [
+      {
+        "url": "uploads/1782404689635_fiersa_besari.mp4",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782404690610_For_Revenge.mp4",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782404691766_DJI_0001.mp4",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1782404694825_DJI_0275_5.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784246986476",
+    "title": "RAVEN CLAW ",
+    "category": "photography",
+    "description": "Perpisahan Raven Claw",
+    "client": "SMAN 6 Karawang",
+    "date": "",
+    "tools": [
+      "Lightroom",
+      "Premier Pro"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1784246984756_653997906_18096079453834017_5674396985173935682_n.webp",
+    "gallery": [
+      {
+        "url": "uploads/1784246984856_653997906_18096079453834017_5674396985173935682_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246984966_652770033_18097257596477074_8312658011282469595_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985097_649129877_17945357231985066_7876263064792428908_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985219_650529064_18002297372897356_9016666545900794983_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985314_656733343_18085783949249935_3065862111743054649_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985401_654244535_18172143979399241_8713402404533452820_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985487_654116616_18099984610761300_6528088057011826381_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985574_650371688_18002458400850407_3777497349532485791_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985658_655821449_18096368252319683_6721598667587380505_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246985745_650026577_18020237783810201_3868908388032185097_n.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246986390_Raven_Claw_Graduation.SMA_Negeri_6_Karawang-Swiss_Bellin_Hotel__3_Mei_2023-.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784316073493",
+    "title": "Motion Graphic",
+    "category": "videography",
+    "description": "Motion Graphic",
     "client": "",
     "date": "",
     "tools": [
+      "Premier Pro"
+    ],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "uploads/1784316071960_Final.mp4",
+    "gallery": [
+      {
+        "url": "uploads/1784316073342_BTS_1.mp4",
+        "layout": "full",
+        "padding": true
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1784246600040",
+    "title": "RENDEZVOUS 39",
+    "category": "photography",
+    "description": "Perpisahan RENDEZVOUS",
+    "client": "SMAN 3 Karawang",
+    "date": "",
+    "tools": [
+      "Lightroom",
+      "Premier pro"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1784246596201_1bf5a1224232995.6807a6ba0e7f4.webp",
+    "gallery": [
+      {
+        "url": "uploads/1784246596490_5d04cc224232995.6807a6ba0d76a.webp",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1784246596858_a8bfd7224232995.6807a6ba0ca2b.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246597210_c92617224232995.6807a6ba0ed46.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246597550_3bd7d8224232995.6807a6ba0c1c4.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246597915_0d1d3e224232995.6807a6ba0dfb2.webp",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1784246598288_95a5de224232995.6807a6ba0d0a4.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1784246599854_SCHOOL.mp4",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783464229388",
+    "title": "Desain Feeds",
+    "category": "design",
+    "description": "Desain Feed Intagram @perkara_telu",
+    "client": "Perkara",
+    "date": "",
+    "tools": [
+      "Figma",
       "Photoshop"
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781686271471_Kaluna_visual-2.jpg",
+    "mediaUrl": "uploads/1783464229235_PERKARA.jpg",
     "gallery": [
-      "/uploads/1781686271813_Kaluna_visual-22.jpg",
-      "/uploads/1781686272230_Kaluna_visual-34.jpg",
-      "/uploads/1781686272391_Kaluna_visual-39.jpg",
-      "/uploads/1781686272842_Kaluna_visual-27.jpg",
-      "/uploads/1781686273074_Kaluna_visual-26.jpg"
-    ]
+      {
+        "url": "uploads/1783464229287_Slice_1.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464229337_Slice_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464229374_Slice_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464706638_ada_apa_di_krw.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464706716_Slice_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464706763_Slice_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464706871_potongan_kiri.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464706940_potongan_tengah.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464706995_potongan_kanan.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707060_Recap_FM_1.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707153_Recap_FM_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707214_Recap_FM_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707291_Frame_84.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707368_Frame_88.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707436_Frame_85.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707521_Frame_87.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707601_Frame_86.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707663_slide_6.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707734_slide_4.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707800_slide_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707864_slide_2.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707936_slide_5.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464707997_slide_6.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464708059_slide_2.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464708121_slide_3.jpg",
+        "layout": "third",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464708204_slide_4.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464708287_slide_5.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464708364_happy_new_year.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783464708445_hari_pahlawan.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1783464708535_isra_miraj.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
   },
   {
-    "id": "1781650252989",
+    "id": "1783398842988",
+    "title": "Sertijab Organisasi",
+    "category": "videography",
+    "description": "MPK OSIS SMKN 2 Karawang",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "video",
+    "mediaUrl": "uploads/1783398842927_Kaluna_visual_-_Photography_Videography_in_Karawang_Indonesia.mp4",
+    "gallery": [],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783397249424",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1783397249065_9adfe1220265393.67bfe1d44e171.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1783397249133_6e7f31220265393.67bfe1d44e75f.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397249204_508171220265393.67bfe1d44f6a2.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397249286_86165f220265393.67bfe1d44ef32.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397249396_15d3ef220265393.67bfe1d44fc1b.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783397177029",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "graduation",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1783397176684_13a5f5218085469.679b609d9d866.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1783397176767_b47be2218085469.679b609d9cfd7.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397176842_08502c218085469.679b609d9ea59.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1783397176921_a3fdd0218085469.679b609d9e2da.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397177011_d2efde218085469.679b609d9ddc5.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1783397068316",
     "title": "Graduation",
     "category": "photography",
     "description": "Graduation",
@@ -74,34 +968,523 @@
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781650249519_Kaluna_visual-1.jpg",
+    "mediaUrl": "uploads/1783397067658_3867e2229672141.6868e8f332640.jpg",
     "gallery": [
-      "/uploads/1781650250321_Kaluna_visual-29.jpg",
-      "/uploads/1781650250980_Kaluna_visual-30.jpg",
-      "/uploads/1781650251440_Kaluna_visual-32.jpg",
-      "/uploads/1781650251732_Kaluna_visual-17.jpg",
-      "/uploads/1781650252301_Kaluna_visual-25.jpg",
-      "/uploads/1781650252900_Kaluna_visual-27.jpg"
-    ]
+      {
+        "url": "uploads/1783397067773_2bb19e229672141.6868e8f3318c4.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397067867_f0c273229672141.6868e8f331f81.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397067973_ed820a229672141.6868e8f330c7c.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1783397068136_405abc229672141.6868e8f331168.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1783397068283_3bbc0b229672141.6868e8f332f9b.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
   },
   {
-    "id": "1781537146840",
+    "id": "1781892402331",
+    "title": "Buku Tahunan Sekolah",
+    "category": "photography",
+    "description": "Foto Buku Tahunan Sekolah SMKN 1 Karawang",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781892396130_kaluna_visual-5.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1781892396293_kaluna_visual-2.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892396469_kaluna_visual-5.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892396655_kaluna_visual-1.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892396876_kaluna_visual-3.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892397104_kaluna_visual-4.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892397332_kaluna_visual-1.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892397524_kaluna_visual-2.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892397730_kaluna_visual-5.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781892397960_kaluna_visual-4.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892398204_kaluna_visual-3.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892398465_kaluna_visual-1.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892399357_kaluna_visual-5.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892399657_kaluna_visual-2.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892399951_kaluna_visual-3.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892400195_kaluna_visual-4.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892400375_kaluna_visual-1.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781892400554_kaluna_visual-2.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892400767_kaluna_visual-5.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892400998_kaluna_visual-4.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892401199_kaluna_visual-3.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892401391_kaluna_visual-1.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892401600_kaluna_visual-5.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892401874_kaluna_visual-2.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892402096_kaluna_visual-4.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781892402307_kaluna_visual-3.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1781891618833",
     "title": "Graduation",
     "category": "photography",
-    "description": "GRADUATION",
-    "client": "Sindy",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781891618093_File_Edit__77___Large_.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1781891618121_File_Edit__64___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618150_File_Edit__74___Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781891618176_File_Edit__76___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618203_File_Edit__21___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618231_File_Edit__38___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618263_File_Edit__50___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618306_File_Edit__48___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618333_File_Edit__53___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618371_File_Edit__57___Large_.jpg",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618404_File_Edit__68___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618447_File_Edit__73___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618478_File_Edit__17___Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781891618521_File_Edit__9___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618563_File_Edit__39___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618641_File_Edit__42___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618706_File_Edit__51___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618774_File_Edit__44___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781891618819_File_Edit__12___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
+    "id": "1781888685006",
+    "title": "Graduation ",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
     "date": "",
     "tools": [
       "Lightroom"
     ],
     "featured": true,
     "mediaType": "image",
-    "mediaUrl": "/uploads/1781537145573_kaluna_visual__22_of_47_.jpg",
+    "mediaUrl": "uploads/1781888684602_Kaluna_visual-2__Large_.png",
     "gallery": [
-      "/uploads/1781537145828_kaluna_visual__17_of_47_.jpg",
-      "/uploads/1781537146162_kaluna_visual__23_of_47_.jpg",
-      "/uploads/1781537146650_kaluna_visual__31_of_47_.jpg",
-      "/uploads/1781537146824_kaluna_visual__38_of_47_.jpg"
+      {
+        "url": "uploads/1781888684671_Kaluna_visual-37__Large_.png",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684712_Kaluna_visual-41__Large_.png",
+        "layout": "half",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684743_Kaluna_visual-5__Large_.png",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781888684772_Kaluna_visual-7__Large_.png",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684798_Kaluna_visual-11__Large_.png",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684827_Kaluna_visual-15__Large_.png",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684887_Kaluna_visual-17__Large_.png",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684941_Kaluna_visual-27__Large_.png",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888684991_Kaluna_visual-34__Large_.png",
+        "layout": "full",
+        "padding": false
+      }
+    ]
+  },
+  {
+    "id": "1781888509196",
+    "title": "Graduation",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781888508942_kaluna_visual__25_of_47___Large_.jpg",
+    "gallery": [
+      {
+        "url": "uploads/1781888508966_kaluna_visual__24_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888508989_kaluna_visual__40_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888509025_kaluna_visual__43_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": true
+      },
+      {
+        "url": "uploads/1781888509049_kaluna_visual__2_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888509083_kaluna_visual__7_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888509120_kaluna_visual__10_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888509141_kaluna_visual__16_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888509164_kaluna_visual__18_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "uploads/1781888509186_kaluna_visual__22_of_47___Large_.jpg",
+        "layout": "full",
+        "padding": false
+      }
+    ]
+  },
+  {
+    "id": "1781888355603",
+    "title": "Graduation - Unsika ",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781888355170_Kaluna_visual-6__Large_.png",
+    "gallery": [
+      "uploads/1781888355214_Kaluna_visual-13__Large_.png",
+      "uploads/1781888355241_Kaluna_visual-17__Large_.png",
+      "uploads/1781888355271_Kaluna_visual-28__Large_.png",
+      "uploads/1781888355301_Kaluna_visual-35__Large_.png",
+      "uploads/1781888355356_Kaluna_visual-2__Large_.png",
+      "uploads/1781888355437_Kaluna_visual-3__Large_.png",
+      "uploads/1781888355525_Kaluna_visual-7__Large_.png",
+      "uploads/1781888355577_Kaluna_visual-8__Large_.png"
+    ]
+  },
+  {
+    "id": "1781888232429",
+    "title": "Graduation - Unsika",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "November 2025",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781888232154_Kaluna_visual__1_of_54___Large_.jpg",
+    "gallery": [
+      "uploads/1781888232176_Kaluna_visual__31_of_54___Large_.jpg",
+      "uploads/1781888232195_Kaluna_visual__41_of_54___Large_.jpg",
+      "uploads/1781888232213_Kaluna_visual__43_of_54___Large_.jpg",
+      "uploads/1781888232250_Kaluna_visual__44_of_54___Large_.jpg",
+      "uploads/1781888232278_Kaluna_visual__8_of_54___Large_.jpg",
+      "uploads/1781888232307_Kaluna_visual__13_of_54___Large_.jpg",
+      "uploads/1781888232333_Kaluna_visual__16_of_54___Large_.jpg",
+      "uploads/1781888232354_Kaluna_visual__18_of_54___Large_.jpg",
+      "uploads/1781888232372_Kaluna_visual__24_of_54___Large_.jpg",
+      "uploads/1781888232415_Kaluna_visual__25_of_54___Large_.jpg"
+    ]
+  },
+  {
+    "id": "1781888029592",
+    "title": "Graduation - Unsika",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "July 2026",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781888029017_Kaluna_visual-52__35___Large_.png",
+    "gallery": [
+      "uploads/1781888029070_Kaluna_visual-52__50___Large_.png",
+      "uploads/1781888029113_Kaluna_visual-52__53___Large_.png",
+      "uploads/1781888029164_Kaluna_visual-52__2___Large_.png",
+      "uploads/1781888029230_Kaluna_visual-52__3___Large_.png",
+      "uploads/1781888029270_Kaluna_visual-52__6___Large_.png",
+      "uploads/1781888029329_Kaluna_visual-52__13___Large_.png",
+      "uploads/1781888029369_Kaluna_visual-52__16___Large_.png",
+      "uploads/1781888029403_Kaluna_visual-52__17___Large_.png",
+      "uploads/1781888029449_Kaluna_visual-52__20___Large_.png",
+      "uploads/1781888029495_Kaluna_visual-52__31___Large_.png",
+      "uploads/1781888029521_Kaluna_visual-52__36___Large_.png",
+      "uploads/1781888029580_Kaluna_visual-52__44___Large_.png"
+    ]
+  },
+  {
+    "id": "1781887745575",
+    "title": "Graduation - Unsika",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "November 2025",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781887745212_Kaluna_visual-2__Large_.jpg",
+    "gallery": [
+      "uploads/1781887745283_Kaluna_visual-29__Large_.jpg",
+      "uploads/1781887745344_Kaluna_visual-39__Large_.jpg",
+      "uploads/1781887745384_Kaluna_visual-6__Large_.jpg",
+      "uploads/1781887745422_Kaluna_visual-10__Large_.jpg",
+      "uploads/1781887745453_Kaluna_visual-15__Large_.jpg",
+      "uploads/1781887745490_Kaluna_visual-20__Large_.jpg",
+      "uploads/1781887745552_Kaluna_visual-22__Large_.jpg"
+    ]
+  },
+  {
+    "id": "1781887537585",
+    "title": "Graduation - Unsika ",
+    "category": "photography",
+    "description": "Graduation",
+    "client": "",
+    "date": "",
+    "tools": [
+      "Lightroom"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "uploads/1781887537361_Kaluna_visual-1__Large_.jpg",
+    "gallery": [
+      "uploads/1781887537397_Kaluna_visual-7__Large_.jpg",
+      "uploads/1781887537433_Kaluna_visual-16__Large_.jpg",
+      "uploads/1781887537461_Kaluna_visual-17__Large_.jpg",
+      "uploads/1781887537504_Kaluna_visual-25__Large_.jpg",
+      "uploads/1781887537566_Kaluna_visual-31__Large_.jpg"
     ]
   }
 ]

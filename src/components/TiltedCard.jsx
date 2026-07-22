@@ -21,11 +21,16 @@ export default function TiltedCard({
   showMobileWarning = true,
   showTooltip = true,
   overlayContent = null,
+  posterSrc = '',
   displayOverlayContent = false,
   isVideo = false
 }) {
   const ref = useRef(null);
   const videoRef = useRef(null);
+
+  const videoSourceUrl = isVideo && imageSrc && !imageSrc.includes('#t=')
+    ? `${imageSrc}#t=0.001`
+    : imageSrc;
 
   const x = useMotionValue();
   const y = useMotionValue();
@@ -111,12 +116,14 @@ export default function TiltedCard({
         {isVideo ? (
           <motion.video
             ref={videoRef}
-            src={imageSrc}
+            src={videoSourceUrl}
+            poster={posterSrc}
             className="tilted-card-img"
             muted
             playsInline
             loop
-            preload="auto"
+            preload="metadata"
+            onContextMenu={(e) => e.preventDefault()}
             style={{
               width: imageWidth,
               height: imageHeight,
@@ -128,6 +135,9 @@ export default function TiltedCard({
             src={imageSrc}
             alt={altText}
             className="tilted-card-img"
+            loading="lazy"
+            onContextMenu={(e) => e.preventDefault()}
+            draggable="false"
             style={{
               width: imageWidth,
               height: imageHeight

@@ -98,11 +98,14 @@ export default defineConfig({
                   projects = JSON.parse(fileContent);
                 }
 
+                let savedProject = { ...body };
+
                 // Handle edit vs create
                 const projectIndex = projects.findIndex(p => p.id === body.id);
                 if (projectIndex > -1) {
                   // Edit existing project
                   projects[projectIndex] = { ...projects[projectIndex], ...body };
+                  savedProject = projects[projectIndex];
                 } else {
                   // Create new project
                   const newProject = {
@@ -110,13 +113,14 @@ export default defineConfig({
                     ...body
                   };
                   projects.unshift(newProject); // Prepend to show at the top
+                  savedProject = newProject;
                 }
 
                 fs.writeFileSync(dataPath, JSON.stringify(projects, null, 2), 'utf8');
 
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'application/json');
-                res.end(JSON.stringify({ success: true, project: body }));
+                res.end(JSON.stringify({ success: true, project: savedProject }));
               })
               .catch(err => {
                 res.statusCode = 500;
@@ -160,6 +164,140 @@ export default defineConfig({
                   fs.writeFileSync(dataPath, JSON.stringify(projects, null, 2), 'utf8');
                 }
 
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: true }));
+              })
+              .catch(err => {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: err.message }));
+              });
+            return;
+          }
+
+          if (req.url === '/api/projects/reorder' && req.method === 'POST') {
+            getRequestBody()
+              .then(body => {
+                const dataPath = path.resolve(process.cwd(), 'public/data.json');
+                if (Array.isArray(body)) {
+                  fs.writeFileSync(dataPath, JSON.stringify(body, null, 2), 'utf8');
+                  res.statusCode = 200;
+                  res.setHeader('Content-Type', 'application/json');
+                  res.end(JSON.stringify({ success: true }));
+                } else {
+                  res.statusCode = 400;
+                  res.setHeader('Content-Type', 'application/json');
+                  res.end(JSON.stringify({ error: 'Body must be a JSON array' }));
+                }
+              })
+              .catch(err => {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: err.message }));
+              });
+            return;
+          }
+
+          if (req.url === '/api/analytics' && req.method === 'GET') {
+            const analyticsPath = path.resolve(process.cwd(), 'public/analytics.json');
+            if (fs.existsSync(analyticsPath)) {
+              const fileContent = fs.readFileSync(analyticsPath, 'utf8');
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'application/json');
+              res.end(fileContent);
+            } else {
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify({}));
+            }
+            return;
+          }
+
+          if (req.url === '/api/analytics' && req.method === 'POST') {
+            getRequestBody()
+              .then(body => {
+                const analyticsPath = path.resolve(process.cwd(), 'public/analytics.json');
+                fs.writeFileSync(analyticsPath, JSON.stringify(body, null, 2), 'utf8');
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: true }));
+              })
+              .catch(err => {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: err.message }));
+              });
+            return;
+          }
+
+          if (req.url === '/api/messages' && req.method === 'POST') {
+            getRequestBody()
+              .then(body => {
+                const messagesPath = path.resolve(process.cwd(), 'public/messages.json');
+                let messages = [];
+                if (fs.existsSync(messagesPath)) {
+                  try {
+                    const content = fs.readFileSync(messagesPath, 'utf8');
+                    messages = JSON.parse(content || '[]');
+                  } catch (e) {
+                    messages = [];
+                  }
+                }
+                const newMessage = {
+                  id: Date.now().toString(),
+                  name: body.name || 'Anonymous',
+                  email: body.email || '',
+                  subject: body.subject || '',
+                  message: body.message || '',
+                  date: new Date().toISOString()
+                };
+                messages.push(newMessage);
+                fs.writeFileSync(messagesPath, JSON.stringify(messages, null, 2), 'utf8');
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: true, message: newMessage }));
+              })
+              .catch(err => {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: err.message }));
+              });
+            return;
+          }
+
+          if (req.url === '/api/messages' && req.method === 'GET') {
+            const messagesPath = path.resolve(process.cwd(), 'public/messages.json');
+            if (fs.existsSync(messagesPath)) {
+              const fileContent = fs.readFileSync(messagesPath, 'utf8');
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'application/json');
+              res.end(fileContent);
+            } else {
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify([]));
+            }
+            return;
+          }
+
+          if (req.url === '/api/messages/delete' && req.method === 'POST') {
+            getRequestBody()
+              .then(body => {
+                const { id } = body;
+                if (!id) {
+                  res.statusCode = 400;
+                  res.setHeader('Content-Type', 'application/json');
+                  res.end(JSON.stringify({ error: 'Missing message id' }));
+                  return;
+                }
+                const messagesPath = path.resolve(process.cwd(), 'public/messages.json');
+                if (fs.existsSync(messagesPath)) {
+                  const fileContent = fs.readFileSync(messagesPath, 'utf8');
+                  let messages = JSON.parse(fileContent || '[]');
+                  messages = messages.filter(m => m.id !== id);
+                  fs.writeFileSync(messagesPath, JSON.stringify(messages, null, 2), 'utf8');
+                }
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'application/json');
                 res.end(JSON.stringify({ success: true }));

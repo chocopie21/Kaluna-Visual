@@ -1,0 +1,124 @@
+.social-feed-section {
+  padding: 4rem 0 5rem;
+  position: relative;
+}
+
+.social-feed-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .social-feed-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+.social-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(225, 48, 108, 0.25);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.social-follow-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.social-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 992px) {
+  .social-posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .social-posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.social-post-card {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.social-post-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-post-card:hover .social-post-img {
+  transform: scale(1.08);
+}
+
+.social-post-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 12, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  color: white;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.social-post-card:hover .social-post-overlay {
+  opacity: 1;
+}
+
+.social-post-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.social-post-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.social-post-caption {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0.9;
+}

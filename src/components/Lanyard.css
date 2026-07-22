@@ -2,7 +2,7 @@
   width: 900px;
   height: 1100px;
   position: absolute;
-  top: 0; /* Aligns exactly with the bottom border line of the navbar at top of page */
+  top: -150px; /* Shift upward to align card with text */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;

@@ -1,0 +1,47 @@
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+/* Scroll Logo Nodes - Grayscale & Subtle Opacity */
+.scroll-logo-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  filter: grayscale(100%) contrast(0.9);
+}
+
+.scroll-logo-node svg {
+  height: 35px !important;
+  width: auto !important;
+}
+
+@media (min-width: 768px) {
+  .scroll-logo-node svg {
+    height: 55px !important;
+    width: auto !important;
+  }
+}

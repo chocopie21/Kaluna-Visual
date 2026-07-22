@@ -7,6 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .tilted-card-mobile-alert {
@@ -31,6 +33,8 @@
   transform-style: preserve-3d;
   width: 100%;
   height: 100%;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .tilted-card-img {
@@ -54,7 +58,7 @@
   z-index: 2;
   will-change: transform;
   transform: translateZ(30px);
-  pointer-events: none; /* Make overlay click-through */
+  pointer-events: none; /* Make overlay elements click-through */
 }
 
 .tilted-card-caption {

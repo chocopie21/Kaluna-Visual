@@ -1,0 +1,158 @@
+.wa-glass-wrapper {
+  position: fixed;
+  bottom: 2.2rem;
+  right: 2.2rem;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+.wa-glass-btn {
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  width: 4.2em;
+  height: 4.2em;
+  perspective: 24em;
+  transform-style: preserve-3d;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.wa-glass-back,
+.wa-glass-front,
+.wa-glass-label {
+  transition:
+    opacity 0.35s cubic-bezier(0.83, 0, 0.17, 1),
+    transform 0.35s cubic-bezier(0.83, 0, 0.17, 1),
+    box-shadow 0.35s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.wa-glass-back,
+.wa-glass-front {
+  border-radius: 1.25em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wa-glass-back {
+  background: linear-gradient(135deg, hsl(123, 90%, 40%), hsl(145, 90%, 35%));
+  box-shadow: 0.5em -0.5em 0.75em hsla(123, 10%, 10%, 0.25), 0 0 20px rgba(37, 211, 102, 0.3);
+  display: block;
+  transform: rotate(15deg);
+  transform-origin: 100% 100%;
+  will-change: transform;
+}
+
+.wa-glass-front {
+  background-color: hsla(0, 0%, 100%, 0.18);
+  box-shadow: 0 0 0 0.1em hsla(0, 0%, 100%, 0.35) inset, 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(0.75em);
+  -webkit-backdrop-filter: blur(0.75em);
+  -moz-backdrop-filter: blur(0.75em);
+  display: flex;
+  transform-origin: 80% 50%;
+  will-change: transform;
+}
+
+.wa-glass-icon {
+  margin: auto;
+  width: 1.8em;
+  height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+}
+
+.wa-glass-label {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  color: var(--text-primary);
+  background: rgba(26, 24, 22, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  position: absolute;
+  bottom: calc(100% + 0.75em);
+  right: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+[data-theme="light"] .wa-glass-label {
+  background: rgba(255, 255, 255, 0.9);
+  color: #121110;
+}
+
+.wa-glass-btn:focus-visible .wa-glass-back,
+.wa-glass-btn:hover .wa-glass-back {
+  transform: rotate(25deg) translate3d(-0.5em, -0.5em, 0.5em);
+  box-shadow: 0.75em -0.75em 1.25em hsla(123, 20%, 10%, 0.35), 0 0 24px rgba(37, 211, 102, 0.45);
+}
+
+.wa-glass-btn:focus-visible .wa-glass-front,
+.wa-glass-btn:hover .wa-glass-front {
+  transform: translate3d(0, 0, 2em);
+  background-color: hsla(0, 0%, 100%, 0.28);
+  box-shadow: 0 0 0 0.12em hsla(0, 0%, 100%, 0.5) inset, 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+.wa-glass-btn:focus-visible .wa-glass-label,
+.wa-glass-btn:hover .wa-glass-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ambient pulsing ring around 3D card */
+.wa-pulse-ring {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 1.4em;
+  border: 2px solid rgba(37, 211, 102, 0.6);
+  animation: waGlassPulse 2.8s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes waGlassPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wa-glass-wrapper {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    font-size: 0.75rem;
+  }
+
+  .wa-glass-btn {
+    width: 3.4em;
+    height: 3.4em;
+  }
+}
