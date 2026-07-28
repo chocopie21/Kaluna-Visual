@@ -967,14 +967,6 @@ function App() {
               {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
             </button>
             <button 
-              className="btn-icon" 
-              onClick={() => setIsAdminOpen(true)}
-              title="Akses Panel Admin"
-              aria-label="Buka Panel Admin"
-            >
-              <Lock size={16} />
-            </button>
-            <button 
               className="btn-icon mobile-toggle"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? 'Tutup Menu' : 'Buka Menu Navigasi'}
@@ -1373,6 +1365,14 @@ function App() {
               <span>© 2026 Ahmad Nafi</span>
               <a href="#" className="footer-link">{t.footer.privacy}</a>
               <a href="#" className="footer-link">{t.footer.terms}</a>
+              <span 
+                className="footer-link admin-trigger" 
+                onDoubleClick={() => setIsAdminOpen(true)}
+                style={{ cursor: 'pointer', userSelect: 'none', transition: 'color 0.25s ease' }}
+                title={lang === 'id' ? 'Klik 2x untuk membuka Panel Admin' : 'Double click to open Admin Panel'}
+              >
+                {lang === 'id' ? 'Panel Admin' : 'Admin Panel'}
+              </span>
             </div>
           </div>
         </div>
