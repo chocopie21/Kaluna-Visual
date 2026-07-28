@@ -99,14 +99,116 @@ const DEFAULT_RESPONSE = {
   suggestions: ['📸 Layanan Fotografi', '🎬 Layanan Videografi', '⏱️ Durasi Pengerjaan']
 };
 
+const KNOWLEDGE_BASE_EN = [
+  {
+    id: 'sapaan',
+    keywords: ['hello', 'hi', 'hey', 'morning', 'afternoon', 'evening', 'excuse', 'bro', 'bot', 'who'],
+    answer: "Hello! 👋 I am **Ahmad Nafi's AI Assistant** (Visual Creator & Digital Multimedia Designer).\n\nHow can I help you regarding my portfolio, photography/videography services, UI/UX, or booking slots?",
+    suggestions: ['📸 Creative Services', '🎓 Education History', '💰 Price Estimation']
+  },
+  {
+    id: 'foto',
+    keywords: ['photo', 'photography', 'shoot', 'graduation', 'event', 'portrait', 'camera', 'take'],
+    answer: "📸 **Ahmad Nafi's Photography Services**:\n• **Graduation & Wisuda**: Individual/group photo sessions with cinematic color grading.\n• **Event & Celebration**: Stage, seminar, and special moment coverage.\n• **Portrait & Modeling**: Concept photoshoot sessions indoor / outdoor.\n\nAll packages include editing & high-resolution digital files ready to print!",
+    suggestions: ['How much does it cost?', 'How long does it take?', 'Chat via WhatsApp']
+  },
+  {
+    id: 'video',
+    keywords: ['video', 'videography', 'cinematic', 'reels', 'tiktok', 'commercial', 'editing', 'drone', 'shorts'],
+    answer: "🎬 **Videography & Editing Services**:\n• **Cinematic Video**: Company profiles, event teasers, & short movies.\n• **Social Media Reels / Shorts**: Vertical 9:16 video content optimized for TikTok & Instagram branding.\n• **Video Commercial**: Product ads & brand promotions.\n\nEquipped with 4K recording & cinematic aerial drone footages!",
+    suggestions: ['What camera & drone?', 'How long to edit video?']
+  },
+  {
+    id: 'desain',
+    keywords: ['design', 'graphic', 'logo', 'branding', 'feed', 'poster', 'flyer', 'banner'],
+    answer: "🎨 **Graphic Design & Visual Branding**:\n• **Identity Branding**: Designing logos, color schemes, & visual style guides.\n• **Social Media Content**: Aesthetic and clean Instagram Grid/Story layouts.\n• **Print & Digital Media**: Promotional posters, flyers, & merchandise design.",
+    suggestions: ['UI/UX Services', 'Contact WhatsApp']
+  },
+  {
+    id: 'uiux',
+    keywords: ['ui', 'ux', 'web', 'website', 'app', 'mobile', 'figma', 'prototype', 'interface'],
+    answer: "📱 **UI/UX Design & Web Development**:\n• **UI/UX Prototype**: Designing wireframes & interactive prototypes in Figma.\n• **Web Development**: Building modern portfolio websites, landing pages, & responsive high-performance web applications (React/Vite/Lenis).",
+    suggestions: ['Nafi\'s work experience', 'Discuss website project']
+  },
+  {
+    id: 'harga',
+    keywords: ['price', 'cost', 'fee', 'rate', 'budget', 'package', 'pay', 'sewa', 'how much', 'pricelist'],
+    answer: "💰 **Price Estimation & Package Rates**:\nTo get the **complete pricelist** or consult about adjusting visual project budgets, feel free to chat with Nafi directly on WhatsApp! Pricing is highly flexible depending on your creative concept.",
+    action: { label: 'Get Pricelist via WhatsApp', url: 'https://wa.me/6283815906766?text=Hello%20Nafi,%20I%20want%20to%20ask%20about%20your%20services%20pricelist' },
+    suggestions: ['Payment & DP rules', 'How long does it take?']
+  },
+  {
+    id: 'alat',
+    keywords: ['camera', 'gear', 'dji', 'sony', 'lens', 'drone', 'aerial', 'equipment', 'record'],
+    answer: "📷 **Gear & Equipment**:\nTo ensure premium visual outputs (Full HD/4K), Ahmad Nafi uses professional **Sony** cameras (premium body & lens lineup) and a **DJI Drone** for cinematic aerial footages.",
+    suggestions: ['See photo works', 'See video works']
+  },
+  {
+    id: 'durasi',
+    keywords: ['duration', 'time', 'days', 'timeline', 'deadline', 'when', 'finished', 'process'],
+    answer: "⏱️ **Project Processing Time (Timeline)**:\n• 📸 **Graduation Photos**: Completed in **1-2 days**.\n• 📸 **Event / Celebration Photos**: Completed in **3 days**.\n• 🎬 **Video Reels / Teaser**: Completed in **3-5 days**.\n• 🎨 **Logo / UI/UX Design**: Completed in **1-3 days**.\n\n*Note: Timelines start after production sessions are completed / all visual assets are gathered.*",
+    suggestions: ['Payment & DP rules', 'Contact Nafi via WA']
+  },
+  {
+    id: 'dp',
+    keywords: ['dp', 'booking', 'payment', 'down payment', 'bank', 'transfer', 'method'],
+    answer: "📅 **Payment System & Booking Slots**:\n• **Down Payment (DP)**: Minimum **50% upfront** to secure your booking date.\n• **Final Payment**: Paid after the project is completed and final high-res files are ready to send.",
+    suggestions: ['Contact Nafi via WA', 'How long does it take?']
+  },
+  {
+    id: 'pendidikan',
+    keywords: ['study', 'education', 'major', 'school', 'university', 'telkom', 'student'],
+    answer: "🎓 **Status & Educational History**:\nAhmad Nafi is currently an **active student** at **Telkom University** (Bachelor of Applied Digital Creative Multimedia, 2024 - Present).\n\nPreviously, Nafi graduated from SMAN 6 Karawang (2021 - 2024) and SMPN 5 Karawang (2018 - 2021).",
+    suggestions: ['Freelance / internship offers', 'Work experience']
+  },
+  {
+    id: 'pengalaman',
+    keywords: ['experience', 'work', 'kaluna', 'business', 'career', 'portfolio'],
+    answer: "💼 **Professional Experience**:\n• **Co-Founder & Visual Creator** at *Kaluna Visual* (2023 - Present) – Managing graduation photography & videography services.\n• **Graphic & UI/UX Designer** (2024 - Present) – Designing brand visual identities & digital products.",
+    suggestions: ['Freelance / internship offers', 'Contact Nafi']
+  },
+  {
+    id: 'freelance',
+    keywords: ['freelance', 'contract', 'monthly', 'internship', 'fulltime', 'remote', 'collaboration', 'hire'],
+    answer: "💼 **Long-term Collaboration & Internships**:\nAs an active student, Ahmad Nafi is highly open to freelance contracts, internships, or visual collaborations. \n\nTo align visual projects with college schedules and discuss contract details, please contact Nafi directly via WhatsApp!",
+    action: { label: 'Discuss Collaboration on WA', url: 'https://wa.me/6283815906766?text=Hello%20Nafi,%20I%20am%20interested%20in%20discussing%20a%20freelance/internship%20opportunity' },
+    suggestions: ['Official contact info', 'Where are you based?']
+  },
+  {
+    id: 'lokasi',
+    keywords: ['location', 'address', 'live', 'based', 'city', 'karawang', 'bandung'],
+    answer: "📍 **Domicile & Service Coverage**:\nAhmad Nafi is based in **Karawang & Bandung, West Java, Indonesia**.\n\nNafi is available to travel for remote shoots across the country and overseas!",
+    suggestions: ['Chat via WhatsApp', 'Photography services']
+  },
+  {
+    id: 'kontak',
+    keywords: ['contact', 'wa', 'whatsapp', 'email', 'number', 'phone', 'message'],
+    answer: "✉️ **Ahmad Nafi's Official Contact**:\n• 📲 **WhatsApp**: +62 838-1590-6766\n• 📧 **Email**: ahmadnafi.creative@gmail.com\n\nNafi is ready to respond to your queries!",
+    action: { label: 'Open Nafi\'s WhatsApp', url: 'https://wa.me/6283815906766' },
+    suggestions: ['Price estimation', 'Creative services']
+  }
+];
+
+const DEFAULT_RESPONSE_EN = {
+  answer: "That is an interesting question! Regarding project details, visual concepts, or booking slots, you can consult directly with Ahmad Nafi via WhatsApp.",
+  action: { label: 'Consult directly on WhatsApp', url: 'https://wa.me/6283815906766?text=Hello%20Nafi,%20I%20would%20like%20to%20consult%20about%20a%20project' },
+  suggestions: ['📸 Photography Services', '🎬 Videography Services', '⏱️ Processing Duration']
+};
+
 export default function ChatBotButton() {
   const [isOpen, setIsOpen] = useState(false);
+  const activeLang = localStorage.getItem('lang') || 'id';
+  
   const [messages, setMessages] = useState([
     {
       id: 1,
       sender: 'bot',
-      text: "Halo! 👋 Saya **Asisten AI Ahmad Nafi**.\nAda yang ingin kamu tanyakan terkait portofolio, layanan visual, atau diskusi proyek?",
-      suggestions: ['📸 Layanan Kreatif', '🎓 Pendidikan & Pengalaman', '💰 Estimasi Harga']
+      text: activeLang === 'id' 
+        ? "Halo! 👋 Saya **Asisten AI Ahmad Nafi**.\nAda yang ingin kamu tanyakan terkait portofolio, layanan visual, atau diskusi proyek?" 
+        : "Hello! 👋 I am **Ahmad Nafi's AI Assistant**.\nIs there anything you would like to ask about my portfolio, visual services, or project discussions?",
+      suggestions: activeLang === 'id' 
+        ? ['📸 Layanan Kreatif', '🎓 Pendidikan & Pengalaman', '💰 Estimasi Harga'] 
+        : ['📸 Creative Services', '🎓 Education & Experience', '💰 Pricing Estimation']
     }
   ]);
   const [inputValue, setInputValue] = useState('');
@@ -123,7 +225,28 @@ export default function ChatBotButton() {
     }
   }, [messages, isOpen, isTyping]);
 
+  // Sync initial message on language change if no chat has started
+  useEffect(() => {
+    if (messages.length <= 1) {
+      setMessages([
+        {
+          id: 1,
+          sender: 'bot',
+          text: activeLang === 'id' 
+            ? "Halo! 👋 Saya **Asisten AI Ahmad Nafi**.\nAda yang ingin kamu tanyakan terkait portofolio, layanan visual, atau diskusi proyek?" 
+            : "Hello! 👋 I am **Ahmad Nafi's AI Assistant**.\nIs there anything you would like to ask about my portfolio, visual services, or project discussions?",
+          suggestions: activeLang === 'id' 
+            ? ['📸 Layanan Kreatif', '🎓 Pendidikan & Pengalaman', '💰 Estimasi Harga'] 
+            : ['📸 Creative Services', '🎓 Education & Experience', '💰 Pricing Estimation']
+        }
+      ]);
+    }
+  }, [activeLang]);
+
   const findBestAnswer = (query) => {
+    const kb = activeLang === 'id' ? KNOWLEDGE_BASE : KNOWLEDGE_BASE_EN;
+    const defResponse = activeLang === 'id' ? DEFAULT_RESPONSE : DEFAULT_RESPONSE_EN;
+
     const cleanQuery = query.toLowerCase()
       .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, " ")
       .replace(/\s+/g, " ")
@@ -134,7 +257,7 @@ export default function ChatBotButton() {
     let bestMatch = null;
     let maxScore = 0;
 
-    for (const item of KNOWLEDGE_BASE) {
+    for (const item of kb) {
       let score = 0;
       for (const kw of item.keywords) {
         const kwLower = kw.toLowerCase();
@@ -159,7 +282,7 @@ export default function ChatBotButton() {
       }
     }
 
-    return bestMatch || DEFAULT_RESPONSE;
+    return bestMatch || defResponse;
   };
 
   const handleSend = (textToSend) => {
@@ -225,7 +348,7 @@ export default function ChatBotButton() {
                 <div>
                   <h4 className="bot-chat-title">Nafi AI Assistant</h4>
                   <span className="bot-chat-status">
-                    <span className="bot-online-dot"></span> Online & Siap Membantu
+                    <span className="bot-online-dot"></span> {activeLang === 'id' ? 'Online & Siap Membantu' : 'Online & Ready to Help'}
                   </span>
                 </div>
               </div>
@@ -286,7 +409,7 @@ export default function ChatBotButton() {
               <input
                 type="text"
                 className="bot-chat-input"
-                placeholder="Tulis pertanyaan kamu..."
+                placeholder={activeLang === 'id' ? "Tulis pertanyaan kamu..." : "Type your question..."}
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
               />

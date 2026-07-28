@@ -158,8 +158,8 @@
 
 @media (max-width: 768px) {
   .bot-glass-wrapper {
-    bottom: 1.25rem;
-    right: 5.2rem;
+    bottom: 2rem;
+    right: 6.2rem;
     font-size: 0.75rem;
   }
 
@@ -170,13 +170,13 @@
 
   .bot-chat-container {
     position: fixed;
-    bottom: 5.2rem;
+    bottom: 5.8rem;
     left: 1rem;
     right: 1rem;
     width: auto;
     max-width: calc(100vw - 2rem);
     height: 460px;
-    max-height: calc(100vh - 6.5rem);
+    max-height: calc(100vh - 8rem);
     border-radius: 20px;
     z-index: 1000;
   }

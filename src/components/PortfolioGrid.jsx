@@ -39,7 +39,7 @@ const getYouTubeThumbnail = (url) => {
   return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : '';
 };
 
-const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewMode, setViewMode, addToast, onTrackProjectClick }) => {
+const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewMode, setViewMode, addToast, onTrackProjectClick, lang = 'id' }) => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [hoveredProject, setHoveredProject] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -70,119 +70,145 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
     const r = parseInt(cleanHex.substring(0, 2), 16);
     const g = parseInt(cleanHex.substring(2, 4), 16);
     const b = parseInt(cleanHex.substring(4, 6), 16);
-    const yiq = (r * 299 + g * 587 + b * 114) / 1000;
-    return yiq < 128;
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+    return brightness < 128;
   };
 
   const getModalStyle = () => {
-    if (!selectedProject || !selectedProject.backgroundColor) return {};
-    const bg = selectedProject.backgroundColor;
-    const isDarkBg = isColorDark(bg);
-    const textPrimary = isDarkBg ? '#ffffff' : '#0a0a0c';
-    const textSecondary = isDarkBg ? 'rgba(255, 255, 255, 0.7)' : 'rgba(10, 10, 12, 0.7)';
-    const textTertiary = isDarkBg ? 'rgba(255, 255, 255, 0.45)' : 'rgba(10, 10, 12, 0.45)';
-    const borderColor = isDarkBg ? 'rgba(255, 255, 255, 0.12)' : 'rgba(0, 0, 0, 0.08)';
-    const tagBg = isDarkBg ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.04)';
-
-    const hexToRgba = (hex, opacity) => {
-      const cleanHex = hex.replace('#', '');
-      if (cleanHex.length !== 6) return hex;
-      const r = parseInt(cleanHex.substring(0, 2), 16);
-      const g = parseInt(cleanHex.substring(2, 4), 16);
-      const b = parseInt(cleanHex.substring(4, 6), 16);
-      return `rgba(${r}, ${g}, ${b}, ${opacity})`;
-    };
-
+    if (!selectedProject || !selectedProject.color) return {};
+    
+    // Hex to RGBA conversion for the custom context tint overlay
+    let hex = selectedProject.color.replace('#', '');
+    if (hex.length === 3) {
+      hex = hex.split('').map(char => char + char).join('');
+    }
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    
     return {
-      backgroundColor: bg.startsWith('#') ? hexToRgba(bg, 0.65) : bg,
-      color: textPrimary,
-      '--text-primary': textPrimary,
-      '--text-secondary': textSecondary,
-      '--text-tertiary': textTertiary,
-      '--border-color': borderColor,
-      '--bg-tertiary': tagBg
+      backgroundColor: `rgba(${r}, ${g}, ${b}, 0.08)`,
+      backdropFilter: 'blur(30px) saturate(190%)',
+      WebkitBackdropFilter: 'blur(30px) saturate(190%)'
     };
-  };
-
-  const handleCloseModal = () => {
-    setSelectedProject(null);
-    // Clean up URL query parameter
-    const url = new URL(window.location.href);
-    url.searchParams.delete('project');
-    window.history.replaceState({}, '', url.pathname + url.search);
   };
 
   const handleCopyLink = () => {
     if (!selectedProject) return;
-    const url = `${window.location.origin}${window.location.pathname}?project=${selectedProject.id}`;
+    const url = `${window.location.origin}/?project=${selectedProject.id}`;
     navigator.clipboard.writeText(url)
       .then(() => {
-        if (addToast) {
-          addToast('Link karya berhasil disalin!', 'success');
-        } else {
-          alert('Link karya berhasil disalin!');
-        }
+        if (addToast) addToast(lang === 'id' ? 'Link karya berhasil disalin!' : 'Project link copied to clipboard!');
       })
       .catch(() => {
-        if (addToast) {
-          addToast('Gagal menyalin link.', 'error');
-        }
+        if (addToast) addToast(lang === 'id' ? 'Gagal menyalin link!' : 'Failed to copy link!', 'error');
       });
   };
 
+  // Dedicated Lenis instance for Modal Scrolling
   useEffect(() => {
+    if (!selectedProject) return;
+
+    let lenisModal;
+    // Delay creation to make sure elements are fully mounted
+    const timer = setTimeout(() => {
+      const overlayEl = document.querySelector('.modal-overlay');
+      if (overlayEl) {
+        lenisModal = new Lenis({
+          wrapper: overlayEl, // Scroll overlay wrapper
+          content: overlayEl.querySelector('.modal-container'), // Target the container inside
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          orientation: 'vertical',
+          gestureOrientation: 'vertical',
+          smoothWheel: true,
+          wheelMultiplier: 1.1,
+          touchMultiplier: 1.8,
+        });
+
+        const raf = (time) => {
+          if (lenisModal) {
+            lenisModal.raf(time);
+            requestAnimationFrame(raf);
+          }
+        };
+        requestAnimationFrame(raf);
+      }
+    }, 50);
+
+    return () => {
+      clearTimeout(timer);
+      if (lenisModal) {
+        lenisModal.destroy();
+      }
+    };
+  }, [selectedProject]);
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
+  // Check URL query param ?project=ID for direct link views
+  useEffect(() => {
+    if (projects.length === 0) return;
     const params = new URLSearchParams(window.location.search);
     const projectId = params.get('project');
-    if (projectId && projects.length > 0) {
-      const proj = projects.find(p => p.id === projectId);
-      if (proj) {
-        setSelectedProject(proj);
+    if (projectId) {
+      const match = projects.find(p => p.id === projectId);
+      if (match) {
+        // Delay modal load slightly to wait for layout animations to finish
+        const timer = setTimeout(() => {
+          setSelectedProject(match);
+        }, 300);
+        return () => clearTimeout(timer);
       }
     }
   }, [projects]);
 
+  // Clean URL when modal closes
+  useEffect(() => {
+    if (!selectedProject) {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('project')) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    }
+  }, [selectedProject]);
+
+  // Prevent background page body scroll while modal is active
   useEffect(() => {
     if (selectedProject) {
+      document.body.classList.add('lenis-stopped');
       document.body.style.overflow = 'hidden';
     } else {
+      document.body.classList.remove('lenis-stopped');
       document.body.style.overflow = '';
     }
     return () => {
+      document.body.classList.remove('lenis-stopped');
       document.body.style.overflow = '';
     };
   }, [selectedProject]);
 
-  // Instantiate Lenis smooth scrolling inside the details modal when open
+  // Prevent esc key handling crashes
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setSelectedProject(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  // Sync scroll positioning to prevent visual viewport jumping when modal opens
   useEffect(() => {
     if (!selectedProject) return;
-
     const timer = setTimeout(() => {
-      const wrapper = document.querySelector('.modal-overlay');
-      const content = document.querySelector('.modal-container');
-      
-      if (!wrapper || !content) return;
-
-      const modalLenis = new Lenis({
-        wrapper: wrapper,
-        content: content,
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
-        smoothWheel: true,
-      });
-
-      let rafId;
-      function raf(time) {
-        modalLenis.raf(time);
-        rafId = requestAnimationFrame(raf);
+      const overlayEl = document.querySelector('.modal-overlay');
+      if (overlayEl) {
+        overlayEl.scrollTop = 0;
       }
-      rafId = requestAnimationFrame(raf);
-
-      return () => {
-        cancelAnimationFrame(rafId);
-        modalLenis.destroy();
-      };
     }, 50);
 
     return () => {
@@ -191,12 +217,12 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
   }, [selectedProject]);
 
   const categories = [
-    { id: 'all', label: 'Semua' },
-    { id: 'photography', label: 'Fotografi' },
-    { id: 'videography', label: 'Videografi' },
-    { id: 'design', label: 'Desain Grafis' },
-    { id: 'uiux', label: 'UI/UX Design' },
-    { id: 'random', label: 'Random Pict' }
+    { id: 'all', label: lang === 'id' ? 'Semua' : 'All' },
+    { id: 'photography', label: lang === 'id' ? 'Fotografi' : 'Photography' },
+    { id: 'videography', label: lang === 'id' ? 'Videografi' : 'Videography' },
+    { id: 'design', label: lang === 'id' ? 'Desain Grafis' : 'Graphic Design' },
+    { id: 'uiux', label: lang === 'id' ? 'UI/UX Design' : 'UI/UX Design' },
+    { id: 'random', label: lang === 'id' ? 'Random Pict' : 'Random Pict' }
   ];
 
   const filteredProjects = activeCategory === 'all'
@@ -343,7 +369,7 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
       >
         {filteredProjects.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '4rem 0', color: 'var(--text-secondary)' }}>
-            Belum ada karya di kategori ini.
+            {lang === 'id' ? 'Belum ada karya di kategori ini.' : 'No works found in this category yet.'}
           </div>
         ) : activeCategory === 'random' ? (
           <Masonry
@@ -557,17 +583,17 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
                   <div className="meta-item">
                     <div className="meta-item-title">
                       <User size={12} style={{ marginRight: '4px', verticalAlign: 'middle' }} />
-                      <span>Klien</span>
+                      <span>{lang === 'id' ? 'Klien' : 'Client'}</span>
                     </div>
-                    <div className="meta-item-value">{selectedProject.client || 'Personal Project'}</div>
+                    <div className="meta-item-value">{selectedProject.client || (lang === 'id' ? 'Proyek Pribadi' : 'Personal Project')}</div>
                   </div>
                   
                   <div className="meta-item">
                     <div className="meta-item-title">
                       <Calendar size={12} style={{ marginRight: '4px', verticalAlign: 'middle' }} />
-                      <span>Tanggal</span>
+                      <span>{lang === 'id' ? 'Tanggal' : 'Date'}</span>
                     </div>
-                    <div className="meta-item-value">{selectedProject.date || 'Terbaru'}</div>
+                    <div className="meta-item-value">{selectedProject.date || (lang === 'id' ? 'Terbaru' : 'Recent')}</div>
                   </div>
                   
                   <div className="meta-item">
@@ -640,7 +666,7 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
                     marginBottom: '1rem',
                     fontWeight: '400'
                   }}>
-                    Galeri Tambahan
+                    {lang === 'id' ? 'Galeri Tambahan' : 'Additional Gallery'}
                   </h4>
                   <div className="modal-gallery">
                     {selectedProject.gallery.map((item, index) => {

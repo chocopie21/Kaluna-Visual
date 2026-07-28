@@ -185,3 +185,22 @@ Implemented the React Bits `GlassIcons` 3D perspective architecture into the flo
 
 - **Spring-Physics Sliding Pill**: Upgraded [PortfolioGrid.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/PortfolioGrid.jsx#L254-L318) view switcher buttons to use Framer Motion `<motion.div layoutId="activeViewPill">`. Now, switching between Grid and List modes triggers a smooth sliding orange circle animation underneath the icons.
 - **Symmetric Centering Layout**: Wrapped the controls bar in a `.portfolio-controls` flex container. Configured a left `.controls-spacer` (88px) to balance the width of the right `.switcher-wrapper` (88px), keeping the categories tabs perfectly centered on the screen, aligned neatly with the content.
+
+---
+
+## 34. Mobile Screen Layout & Spacing Fixes 📱
+
+- **Opaque Navbar Background**: Configured the `.navbar` to have a solid background color (`var(--bg-primary)`) on mobile viewports `<= 768px` in [index.css](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/index.css#L2642-L2647) with a subtle bottom shadow. This prevents scrolling page text from visibly bleeding behind the logo and icons, ensuring perfect readability.
+- **Floating Button Spacing Adjustments**: Repositioned the 3D WhatsApp and ChatBot buttons further from the screen edges on mobile (`bottom: 2rem; right: 2rem` and `right: 6.2rem`) in [WhatsAppButton.css](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/WhatsAppButton.css#L147-L153) and [ChatBotButton.css](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/ChatBotButton.css#L159-L165). This ensures they are safe from physical phone screen rounded corners and home swipe bars, and keeps them cleanly separated without overlapping.
+- **Chat Drawer Realignment**: Re-adjusted the mobile ChatBot drawer container to float at `bottom: 5.8rem` to match the newly elevated button position.
+
+---
+
+## 35. Typography Sequence Intro Loader 🎭
+
+- **Aesthetic Typography Sequences**: Overhauled [Preloader.jsx](file:///C:/Users/Ahmad%20Nafi/.gemini/antigravity/scratch/creative-portfolio/src/components/Preloader.jsx) into a high-end typography sequence loader. The preloader sequences through Ahmad Nafi's core creative disciplines: `FOTOGRAFI` ➔ `VIDEOGRAFI` ➔ `DESAIN GRAFIS` ➔ `UI/UX DESIGN` ➔ `CREATIVE STORYTELLING` ➔ `AHMAD NAFI`.
+- **Framer Motion Slide-Up Animation**: Programmed sequential slide-up transition entries and exits (`y: "100%" -> "0%" -> "-100%"` with opacity fades) on word transitions using `<AnimatePresence mode="wait">`. The final brand name displays in high-contrast terracotta orange (`var(--accent-color)`).
+- **Session-Based Smart Bypass**: Coded a `sessionStorage` token validation (`portfolio_visited`). The loader is bypassed automatically on subsequent clicks and page refreshes in the active tab session, optimizing loading times for returning visitors.
+- **Fail-safe Timer**: Added a mobile-responsive fail-safe timeout timer that forces the loader to complete after a maximum of 5 seconds (2.5s on mobile) to protect user experiences on slower devices.
+
+

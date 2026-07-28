@@ -82,10 +82,216 @@ const toolsMarquee = [
   { node: <CanvaIcon />, title: 'Canva' }
 ];
 
+const TRANSLATIONS = {
+  id: {
+    nav: {
+      work: "Karya",
+      about: "Tentang Saya",
+      contact: "Kontak"
+    },
+    hero: {
+      tagline: "Tentang Saya",
+      title: "Di Balik Lensa & Layar",
+      p1: "Saya Ahmad Nafi, mahasiswa Telkom University dengan minat mendalam di bidang fotografi dan desain grafis. Perjalanan saya dimulai dari rasa ingin tahu yang sederhana tentang bagaimana visual dapat menyampaikan pesan lebih kuat daripada kata-kata — sebuah rasa ingin tahu yang kini berkembang menjadi hasrat mendalam untuk mengabadikan cerita dan emosi melalui gambar dan desain.",
+      p2: "Saya selalu percaya bahwa kreativitas bukan sekadar tentang estetika, melainkan tentang makna, kejelasan, dan dampak yang dihasilkan."
+    },
+    services: {
+      tagline: "Layanan Kreatif",
+      title: "Apa Yang Saya Lakukan",
+      photography: {
+        title: "Fotografi",
+        desc: "Menangkap momen berharga dengan komposisi artistik dan pencahayaan yang dramatis. Spesialisasi dalam wisuda (graduation), dokumentasi event, dan portrait."
+      },
+      videography: {
+        title: "Videografi & Editing",
+        desc: "Produksi video sinematik dengan drone dan editing dinamis. Cocok untuk kebutuhan iklan (commercial), video profil, reels, dan dokumentasi acara."
+      },
+      design: {
+        title: "Desain Grafis",
+        desc: "Pembuatan identitas visual brand, feed sosial media, desain poster promosi, serta berbagai materi cetak/digital kreatif yang komunikatif."
+      },
+      uiux: {
+        title: "UI/UX Design",
+        desc: "Merancang antarmuka (interface) aplikasi mobile dan website yang modern, responsif, serta berfokus pada kemudahan dan kenyamanan interaksi pengguna."
+      }
+    },
+    timeline: {
+      tagline: "Riwayat & Pengalaman",
+      title: "Perjalanan Kreatif",
+      education: "Pendidikan",
+      experience: "Pengalaman Kerja",
+      eduItems: [
+        {
+          title: "Telkom University",
+          subtitle: "S1 Terapan Digital Creative Multimedia",
+          desc: "Mendalami produksi konten multimedia, desain digital kreatif, website, UI/UX, serta pengembangan aset kreatif interaktif di era digital."
+        },
+        {
+          title: "SMAN 6 Karawang",
+          subtitle: "Sekolah Menengah Atas",
+          desc: "Mengembangkan minat di bidang desain grafis dan dunia kreatif visual seperti Fotografi, Videografi, dan Editing melalui berbagai kegiatan sekolah dan proyek mandiri."
+        },
+        {
+          title: "SMPN 5 Karawang",
+          subtitle: "Sekolah Menengah Pertama",
+          desc: "Mulai mengenal kamera untuk pertama kalinya dan terjun mengeksplorasi dunia fotografi."
+        }
+      ],
+      expItems: [
+        {
+          title: "Kaluna Visual",
+          subtitle: "Co-Founder & Visual Creator",
+          desc: "Mendirikan Kaluna Visual bersama teman-teman untuk menyediakan jasa dokumentasi graduation (wisuda), liputan event, serta berbagai kebutuhan visual kreatif lainnya."
+        },
+        {
+          title: "Graphic & UI/UX Designer",
+          subtitle: "Branding & Digital Product",
+          desc: "Merancang identitas visual brand, materi publikasi, wireframe antarmuka, serta purwarupa (prototype) produk digital dengan pendekatan user-centered design."
+        }
+      ]
+    },
+    portfolio: {
+      tagline: "Portofolio Pilihan",
+      title: "Karya Terbaru",
+      categories: {
+        all: "Semua",
+        photography: "Fotografi",
+        videography: "Videografi",
+        design: "Desain Grafis",
+        uiux: "UI/UX Design",
+        random: "Random Pict"
+      },
+      empty: "Belum ada karya untuk kategori ini.",
+      detailBtn: "Lihat Detail",
+      closeBtn: "Tutup"
+    },
+    contact: {
+      tagline: "Hubungi Kreator",
+      title: "Mari Berkolaborasi",
+      name: "Nama Anda",
+      email: "Email Anda",
+      subject: "Subjek",
+      message: "Pesan Anda",
+      sendBtn: "Kirim Pesan",
+      sendingBtn: "Mengirim..."
+    },
+    footer: {
+      tagline: "Mari buat sesuatu yang luar biasa bersama-sama.",
+      privacy: "Kebijakan Privasi",
+      terms: "Ketentuan Layanan"
+    }
+  },
+  en: {
+    nav: {
+      work: "Works",
+      about: "About Me",
+      contact: "Contact"
+    },
+    hero: {
+      tagline: "About Me",
+      title: "Behind the Lens & Screen",
+      p1: "I am Ahmad Nafi, a student at Telkom University with a strong passion for photography and graphic design. My journey began with a simple curiosity about how visuals can speak louder than words — a curiosity that has grown into a deep interest in capturing stories and emotions through images and design.",
+      p2: "I’ve always believed that creativity is not just about aesthetics, but also about meaning, clarity, and impact."
+    },
+    services: {
+      tagline: "Creative Services",
+      title: "What I Do",
+      photography: {
+        title: "Photography",
+        desc: "Capturing precious moments with artistic composition and dramatic lighting. Specializing in graduation portraits, event documentation, and portraits."
+      },
+      videography: {
+        title: "Videography & Editing",
+        desc: "Producing cinematic videos with drones and dynamic editing. Perfect for commercials, profile videos, reels, and event documentation."
+      },
+      design: {
+        title: "Graphic Design",
+        desc: "Creating brand visual identities, social media feeds, promotional posters, and various communicative print/digital creative materials."
+      },
+      uiux: {
+        title: "UI/UX Design",
+        desc: "Designing modern, responsive mobile and website interfaces focused on ease of use and seamless user interaction."
+      }
+    },
+    timeline: {
+      tagline: "History & Experience",
+      title: "Creative Journey",
+      education: "Education",
+      experience: "Work Experience",
+      eduItems: [
+        {
+          title: "Telkom University",
+          subtitle: "Bachelor of Applied Digital Creative Multimedia",
+          desc: "Studying multimedia content production, creative digital design, websites, UI/UX, and interactive creative asset development in the digital era."
+        },
+        {
+          title: "SMAN 6 Karawang",
+          subtitle: "Senior High School",
+          desc: "Developed an interest in graphic design and the visual creative world such as Photography, Videography, and Editing through school activities and self-initiated projects."
+        },
+        {
+          title: "SMPN 5 Karawang",
+          subtitle: "Junior High School",
+          desc: "First introduced to cameras and dove into exploring the world of photography."
+        }
+      ],
+      expItems: [
+        {
+          title: "Kaluna Visual",
+          subtitle: "Co-Founder & Visual Creator",
+          desc: "Co-founded Kaluna Visual with friends to provide graduation documentation services, event coverage, and various other visual creative needs."
+        },
+        {
+          title: "Graphic & UI/UX Designer",
+          subtitle: "Branding & Digital Product",
+          desc: "Designing visual brand identities, publication materials, interface wireframes, and digital product prototypes using a user-centered design approach."
+        }
+      ]
+    },
+    portfolio: {
+      tagline: "Selected Works",
+      title: "Latest Creations",
+      categories: {
+        all: "All",
+        photography: "Photography",
+        videography: "Videography",
+        design: "Graphic Design",
+        uiux: "UI/UX Design",
+        random: "Random Pict"
+      },
+      empty: "No works found in this category yet.",
+      detailBtn: "View Details",
+      closeBtn: "Close"
+    },
+    contact: {
+      tagline: "Get In Touch",
+      title: "Let's Collaborate",
+      name: "Your Name",
+      email: "Your Email",
+      subject: "Subject",
+      message: "Your Message",
+      sendBtn: "Send Message",
+      sendingBtn: "Sending..."
+    },
+    footer: {
+      tagline: "Let's make something amazing together.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service"
+    }
+  }
+};
+
 function App() {
   const [projects, setProjects] = useState([]);
   const [mountError, setMountError] = useState(null);
   const viewTrackedRef = useRef(false);
+  const [lang, setLang] = useState(localStorage.getItem('lang') || 'id');
+
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+  }, [lang]);
+
+  const t = TRANSLATIONS[lang];
  
   // Initialize Lenis Smooth Scrolling
   useEffect(() => {
@@ -735,11 +941,22 @@ function App() {
           <div className="nav-actions">
             {/* Desktop Nav Links */}
             <div className="nav-links">
-              <a href="#work" className="nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>Karya</a>
-              <a id="nav-link-about" href="#about" className="nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>Tentang Saya</a>
-              <a id="nav-link-contact" href="#contact" className="nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Kontak</a>
+              <a href="#work" className="nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>{t.nav.work}</a>
+              <a id="nav-link-about" href="#about" className="nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>{t.nav.about}</a>
+              <a id="nav-link-contact" href="#contact" className="nav-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>{t.nav.contact}</a>
             </div>
 
+            <button 
+              className="btn-icon language-toggle" 
+              onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
+              title={lang === 'id' ? 'Switch to English' : 'Ubah ke Bahasa Indonesia'}
+              aria-label={lang === 'id' ? 'Switch to English' : 'Ubah ke Bahasa Indonesia'}
+              style={{ marginRight: '0.25rem' }}
+            >
+              <span style={{ fontSize: '0.85rem', fontWeight: '800', fontFamily: 'var(--font-sans)', letterSpacing: '0.05em' }}>
+                {lang === 'id' ? 'EN' : 'ID'}
+              </span>
+            </button>
             <button 
               className="btn-icon theme-toggle" 
               onClick={toggleTheme}
@@ -782,9 +999,9 @@ function App() {
             gap: '1.25rem',
             zIndex: 99
           }}>
-            <a href="#work" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>Karya</a>
-            <a href="#about" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>Tentang Saya</a>
-            <a href="#contact" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Kontak</a>
+            <a href="#work" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>{t.nav.work}</a>
+            <a href="#about" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>{t.nav.about}</a>
+            <a href="#contact" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>{t.nav.contact}</a>
           </div>
         )}
       </nav>
@@ -820,13 +1037,13 @@ function App() {
         <div className="container">
           <div className="about-grid">
             <div className="about-text reveal">
-              <div className="section-tagline" style={{ marginBottom: '0.25rem' }}>Tentang Saya</div>
-              <h1 className="section-title" style={{ marginBottom: '1.5rem', lineHeight: '1.05' }}>Di Balik Lensa & Layar</h1>
+              <div className="section-tagline" style={{ marginBottom: '0.25rem' }}>{t.hero.tagline}</div>
+              <h1 className="section-title" style={{ marginBottom: '1.5rem', lineHeight: '1.05' }}>{t.hero.title}</h1>
               <p className="about-paragraph">
-                I am Ahmad Nafi, a student at Telkom University with a strong passion for photography and graphic design. My journey began with a simple curiosity about how visuals can speak louder than words — a curiosity that has grown into a deep interest in capturing stories and emotions through images and design.
+                {t.hero.p1}
               </p>
               <p className="about-paragraph">
-                I’ve always believed that creativity is not just about aesthetics, but also about meaning, clarity, and impact.
+                {t.hero.p2}
               </p>
 
             </div>
@@ -839,8 +1056,8 @@ function App() {
       <section id="services" className="services-section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="section-tagline">Layanan Kreatif</div>
-            <h2 className="section-title">Apa Yang Saya Lakukan</h2>
+            <div className="section-tagline">{t.services.tagline}</div>
+            <h2 className="section-title">{t.services.title}</h2>
           </div>
           <div className="services-grid reveal">
             <BorderGlow animated borderRadius={16} glowColor="12 80 60" colors={['#e54d3b', '#ff7e67', '#ffb088']}>
@@ -852,9 +1069,9 @@ function App() {
                 <div className="service-card-icon" style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>
                   <Camera size={24} />
                 </div>
-                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>Fotografi</h3>
+                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>{t.services.photography.title}</h3>
                 <p className="service-card-description">
-                  Menangkap momen berharga dengan komposisi artistik dan pencahayaan yang dramatis. Spesialisasi dalam wisuda (graduation), dokumentasi event, dan portrait.
+                  {t.services.photography.desc}
                 </p>
               </div>
             </BorderGlow>
@@ -868,9 +1085,9 @@ function App() {
                 <div className="service-card-icon" style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>
                   <Video size={24} />
                 </div>
-                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>Videografi & Editing</h3>
+                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>{t.services.videography.title}</h3>
                 <p className="service-card-description">
-                  Produksi video sinematik dengan drone dan editing dinamis. Cocok untuk kebutuhan iklan (commercial), video profil, reels, dan dokumentasi acara.
+                  {t.services.videography.desc}
                 </p>
               </div>
             </BorderGlow>
@@ -884,9 +1101,9 @@ function App() {
                 <div className="service-card-icon" style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>
                   <Palette size={24} />
                 </div>
-                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>Desain Grafis</h3>
+                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>{t.services.design.title}</h3>
                 <p className="service-card-description">
-                  Pembuatan identitas visual brand, feed sosial media, desain poster promosi, serta berbagai materi cetak/digital kreatif yang komunikatif.
+                  {t.services.design.desc}
                 </p>
               </div>
             </BorderGlow>
@@ -900,9 +1117,9 @@ function App() {
                 <div className="service-card-icon" style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>
                   <Layers size={24} />
                 </div>
-                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>UI/UX Design</h3>
+                <h3 className="service-card-title" style={{ fontSize: '1.25rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-sans)' }}>{t.services.uiux.title}</h3>
                 <p className="service-card-description">
-                  Merancang antarmuka (interface) aplikasi mobile dan website yang modern, responsif, serta berfokus pada kemudahan dan kenyamanan interaksi pengguna.
+                  {t.services.uiux.desc}
                 </p>
               </div>
             </BorderGlow>
@@ -914,13 +1131,13 @@ function App() {
       <section id="timeline" className="timeline-section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="section-tagline">Riwayat & Pengalaman</div>
-            <h2 className="section-title">Perjalanan Kreatif</h2>
+            <div className="section-tagline">{t.timeline.tagline}</div>
+            <h2 className="section-title">{t.timeline.title}</h2>
           </div>
           <div className="timeline-cols-grid reveal">
             {/* Left Column: Education */}
             <div className="timeline-col">
-              <h3 className="timeline-col-title">Pendidikan</h3>
+              <h3 className="timeline-col-title">{t.timeline.education}</h3>
               <div className="timeline-container" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <BorderGlow animated borderRadius={12} glowColor="12 80 60" colors={['#e54d3b', '#ff7e67', '#ffb088']}>
                   <div className="timeline-item">
@@ -928,14 +1145,14 @@ function App() {
                       <div className="timeline-card-meta" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '1.25rem' }}>
                         <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'var(--text-tertiary)' }}>01</span>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                          <span className="timeline-date">2024 - Sekarang</span>
+                          <span className="timeline-date">2024 - {lang === 'id' ? 'Sekarang' : 'Present'}</span>
                           <span style={{ fontSize: '1.25rem', color: 'var(--accent-color)', fontWeight: 'bold' }}>+</span>
                         </div>
                       </div>
-                      <h4 className="timeline-title">Telkom University</h4>
-                      <div className="timeline-subtitle">S1 Terapan Digital Creative Multimedia</div>
+                      <h4 className="timeline-title">{t.timeline.eduItems[0].title}</h4>
+                      <div className="timeline-subtitle">{t.timeline.eduItems[0].subtitle}</div>
                       <p className="timeline-description">
-                        Mendalami produksi konten multimedia, desain digital kreatif, website, UI/UX, serta pengembangan aset kreatif interaktif di era digital.
+                        {t.timeline.eduItems[0].desc}
                       </p>
                     </div>
                   </div>
@@ -951,10 +1168,10 @@ function App() {
                           <span style={{ fontSize: '1.25rem', color: 'var(--accent-color)', fontWeight: 'bold' }}>+</span>
                         </div>
                       </div>
-                      <h4 className="timeline-title">SMAN 6 Karawang</h4>
-                      <div className="timeline-subtitle">Sekolah Menengah Atas</div>
+                      <h4 className="timeline-title">{t.timeline.eduItems[1].title}</h4>
+                      <div className="timeline-subtitle">{t.timeline.eduItems[1].subtitle}</div>
                       <p className="timeline-description">
-                        Mengembangkan minat di bidang desain grafis dan dunia kreatif visual seperti Fotografi, Videografi, dan Editing melalui berbagai kegiatan sekolah dan proyek mandiri.
+                        {t.timeline.eduItems[1].desc}
                       </p>
                     </div>
                   </div>
@@ -970,10 +1187,10 @@ function App() {
                           <span style={{ fontSize: '1.25rem', color: 'var(--accent-color)', fontWeight: 'bold' }}>+</span>
                         </div>
                       </div>
-                      <h4 className="timeline-title">SMPN 5 Karawang</h4>
-                      <div className="timeline-subtitle">Sekolah Menengah Pertama</div>
+                      <h4 className="timeline-title">{t.timeline.eduItems[2].title}</h4>
+                      <div className="timeline-subtitle">{t.timeline.eduItems[2].subtitle}</div>
                       <p className="timeline-description">
-                        Mulai mengenal kamera untuk pertama kalinya dan terjun mengeksplorasi dunia fotografi.
+                        {t.timeline.eduItems[2].desc}
                       </p>
                     </div>
                   </div>
@@ -983,7 +1200,7 @@ function App() {
 
             {/* Right Column: Experience */}
             <div className="timeline-col">
-              <h3 className="timeline-col-title">Pengalaman Kerja</h3>
+              <h3 className="timeline-col-title">{t.timeline.experience}</h3>
               <div className="timeline-container" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <BorderGlow animated borderRadius={12} glowColor="12 80 60" colors={['#e54d3b', '#ff7e67', '#ffb088']}>
                   <div className="timeline-item">
@@ -991,14 +1208,14 @@ function App() {
                       <div className="timeline-card-meta" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '1.25rem' }}>
                         <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'var(--text-tertiary)' }}>01</span>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                          <span className="timeline-date">2023 - Sekarang</span>
+                          <span className="timeline-date">2023 - {lang === 'id' ? 'Sekarang' : 'Present'}</span>
                           <span style={{ fontSize: '1.25rem', color: 'var(--accent-color)', fontWeight: 'bold' }}>+</span>
                         </div>
                       </div>
-                      <h4 className="timeline-title">Kaluna Visual</h4>
-                      <div className="timeline-subtitle">Co-Founder & Visual Creator</div>
+                      <h4 className="timeline-title">{t.timeline.expItems[0].title}</h4>
+                      <div className="timeline-subtitle">{t.timeline.expItems[0].subtitle}</div>
                       <p className="timeline-description">
-                        Mendirikan Kaluna Visual bersama teman-teman untuk menyediakan jasa dokumentasi graduation (wisuda), liputan event, serta berbagai kebutuhan visual kreatif lainnya.
+                        {t.timeline.expItems[0].desc}
                       </p>
                     </div>
                   </div>
@@ -1010,14 +1227,14 @@ function App() {
                       <div className="timeline-card-meta" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '1.25rem' }}>
                         <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'var(--text-tertiary)' }}>02</span>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                          <span className="timeline-date">2024 - Sekarang</span>
+                          <span className="timeline-date">2024 - {lang === 'id' ? 'Sekarang' : 'Present'}</span>
                           <span style={{ fontSize: '1.25rem', color: 'var(--accent-color)', fontWeight: 'bold' }}>+</span>
                         </div>
                       </div>
-                      <h4 className="timeline-title">Graphic & UI/UX Designer</h4>
-                      <div className="timeline-subtitle">Branding & Digital Product</div>
+                      <h4 className="timeline-title">{t.timeline.expItems[1].title}</h4>
+                      <div className="timeline-subtitle">{t.timeline.expItems[1].subtitle}</div>
                       <p className="timeline-description">
-                        Merancang identitas visual brand, materi publikasi, wireframe antarmuka, serta purwarupa (prototype) produk digital dengan pendekatan user-centered design.
+                        {t.timeline.expItems[1].desc}
                       </p>
                     </div>
                   </div>
@@ -1058,8 +1275,8 @@ function App() {
       <section id="work" className="portfolio-section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="section-tagline">Portofolio Pilihan</div>
-            <h2 className="section-title">Karya Terbaru</h2>
+            <div className="section-tagline">{t.portfolio.tagline}</div>
+            <h2 className="section-title">{t.portfolio.title}</h2>
           </div>
           
           <PortfolioGrid 
@@ -1070,6 +1287,7 @@ function App() {
             setViewMode={setViewMode}
             addToast={addToast}
             onTrackProjectClick={trackProjectClick}
+            lang={lang}
           />
         </div>
       </section>
@@ -1078,13 +1296,15 @@ function App() {
       <section id="contact" className="contact-section">
         <div className="container">
           <div className="section-header reveal">
-            <div className="section-tagline">Hubungi Kreator</div>
-            <h2 className="section-title">Mari Berkolaborasi</h2>
+            <div className="section-tagline">{t.contact.tagline}</div>
+            <h2 className="section-title">{t.contact.title}</h2>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', maxWidth: '850px' }} className="reveal">
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', lineHeight: '1.65' }}>
-              Apakah Anda memiliki proyek menarik, butuh dokumentasi visual, atau ingin merancang antarmuka aplikasi? Hubungi saya secara langsung melalui email atau media sosial di bawah ini.
+              {lang === 'id' 
+                ? 'Apakah Anda memiliki proyek menarik, butuh dokumentasi visual, atau ingin merancang antarmuka aplikasi? Hubungi saya secara langsung melalui email atau media sosial di bawah ini.' 
+                : 'Do you have an exciting project, need visual documentation, or want to design an app interface? Reach out to me directly via email or social media below.'}
             </p>
             
             <div>
@@ -1120,15 +1340,15 @@ function App() {
           {/* Upper row */}
           <div className="footer-top">
             <div className="footer-tagline">
-              Mari buat sesuatu yang luar biasa bersama-sama.
+              {t.footer.tagline}
             </div>
             
             <div className="footer-links-grid">
               <div className="footer-links-col">
-                <div className="footer-col-title">Navigasi</div>
-                <a href="#work" className="footer-link" onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>Karya</a>
-                <a href="#about" className="footer-link" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>Tentang Saya</a>
-                <a href="#contact" className="footer-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Kontak</a>
+                <div className="footer-col-title">{lang === 'id' ? 'Navigasi' : 'Navigation'}</div>
+                <a href="#work" className="footer-link" onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>{t.nav.work}</a>
+                <a href="#about" className="footer-link" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>{t.nav.about}</a>
+                <a href="#contact" className="footer-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>{t.nav.contact}</a>
               </div>
               <div className="footer-links-col">
                 <div className="footer-col-title">Medsos</div>
@@ -1151,8 +1371,8 @@ function App() {
             </div>
             <div className="footer-bottom-links">
               <span>© 2026 Ahmad Nafi</span>
-              <a href="#" className="footer-link">Kebijakan Privasi</a>
-              <a href="#" className="footer-link">Ketentuan Layanan</a>
+              <a href="#" className="footer-link">{t.footer.privacy}</a>
+              <a href="#" className="footer-link">{t.footer.terms}</a>
             </div>
           </div>
         </div>

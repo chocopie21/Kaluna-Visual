@@ -146,8 +146,8 @@
 
 @media (max-width: 768px) {
   .wa-glass-wrapper {
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 2rem;
+    right: 2rem;
     font-size: 0.75rem;
   }
 
