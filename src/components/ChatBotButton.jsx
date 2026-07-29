@@ -90,6 +90,25 @@ const KNOWLEDGE_BASE = [
     answer: "✉️ **Kontak Resmi Ahmad Nafi**:\n• 📲 **WhatsApp**: +62 838-1590-6766\n• 📧 **Email**: ahmadnafi.creative@gmail.com\n\nNafi siap merespons pesan kamu!",
     action: { label: 'Buka WhatsApp Nafi', url: 'https://wa.me/6283815906766' },
     suggestions: ['Estimasi harga', 'Layanan kreatif']
+  },
+  {
+    id: 'software',
+    keywords: ['software', 'aplikasi', 'program', 'photoshop', 'lightroom', 'premiere', 'ae', 'after effects', 'figma', 'canva', 'tools'],
+    answer: "💻 **Software & Tools yang Digunakan**:\nUntuk pengerjaan proyek visual, Ahmad Nafi menggunakan software standar industri:\n• **Fotografi & Desain**: Adobe Photoshop, Adobe Lightroom, Canva.\n• **Videografi & Editing**: Adobe Premiere Pro, Adobe After Effects.\n• **UI/UX & Web**: Figma.",
+    suggestions: ['📸 Layanan Kreatif', '📷 Kamera & Drone apa?']
+  },
+  {
+    id: 'kolaborasi',
+    keywords: ['kolaborasi', 'kerja sama', 'partnership', 'partner', 'proyek bareng', 'bantu', 'gabung'],
+    answer: "🤝 **Kolaborasi & Kerja Sama**:\nAhmad Nafi sangat terbuka untuk berkolaborasi dengan sesama kreator, agency, startup, maupun brand lokal.\n\nJika Anda memiliki ide kreatif atau ingin berpartner dalam suatu proyek visual, silakan hubungi langsung via WhatsApp untuk diskusi lebih lanjut!",
+    action: { label: 'Diskusikan Kerja Sama via WA', url: 'https://wa.me/6283815906766?text=Halo%20Nafi,%20saya%20tertarik%20untuk%20berkolaborasi' },
+    suggestions: ['Hubungi Nafi', '📸 Layanan Kreatif']
+  },
+  {
+    id: 'batal',
+    keywords: ['batal', 'cancel', 'refund', 'pengembalian', 'uang kembali', 'batal booking'],
+    answer: "⚠️ **Kebijakan Pembatalan & Refund**:\n• **Down Payment (DP)** sebesar 50% yang telah dibayarkan bersifat non-refundable (tidak dapat dikembalikan) jika pembatalan sepihak dilakukan oleh klien setelah jadwal slot terkunci.\n• Jika pembatalan terjadi karena kendala mendesak dari pihak Nafi, maka DP akan dikembalikan secara penuh (100%).",
+    suggestions: ['Ketentuan Pembayaran / DP', 'Hubungi WhatsApp Nafi']
   }
 ];
 
@@ -186,6 +205,25 @@ const KNOWLEDGE_BASE_EN = [
     answer: "✉️ **Ahmad Nafi's Official Contact**:\n• 📲 **WhatsApp**: +62 838-1590-6766\n• 📧 **Email**: ahmadnafi.creative@gmail.com\n\nNafi is ready to respond to your queries!",
     action: { label: 'Open Nafi\'s WhatsApp', url: 'https://wa.me/6283815906766' },
     suggestions: ['Price estimation', 'Creative services']
+  },
+  {
+    id: 'software',
+    keywords: ['software', 'app', 'tool', 'photoshop', 'lightroom', 'premiere', 'after effects', 'figma', 'canva', 'equipment'],
+    answer: "💻 **Software & Tools Used**:\nFor visual projects, Ahmad Nafi uses industry-standard software:\n• **Photography & Design**: Adobe Photoshop, Adobe Lightroom, Canva.\n• **Videography & Editing**: Adobe Premiere Pro, Adobe After Effects.\n• **UI/UX & Web**: Figma.",
+    suggestions: ['📸 Creative Services', '📷 What camera & drone?']
+  },
+  {
+    id: 'kolaborasi',
+    keywords: ['collaboration', 'cooperation', 'partnership', 'partner', 'collaborate', 'work together', 'project together'],
+    answer: "🤝 **Collaboration & Partnership**:\nAhmad Nafi is highly open to collaborating with fellow creators, agencies, startups, or local brands.\n\nIf you have a creative idea or want to partner on a visual project, please contact me directly via WhatsApp to discuss further!",
+    action: { label: 'Discuss Collaboration on WA', url: 'https://wa.me/6283815906766?text=Hello%20Nafi,%20I%20am%20interested%20in%20collaborating' },
+    suggestions: ['Contact Nafi', '📸 Creative Services']
+  },
+  {
+    id: 'batal',
+    keywords: ['cancel', 'cancellation', 'refund', 'money back', 'cancel booking'],
+    answer: "⚠️ **Cancellation & Refund Policy**:\n• The 50% **Down Payment (DP)** is non-refundable if the cancellation is made unilaterally by the client after the schedule slot is secured.\n• If the cancellation occurs due to urgent issues on Nafi's side, the DP will be refunded in full (100%).",
+    suggestions: ['Payment & DP rules', 'Contact Nafi via WA']
   }
 ];
 
