@@ -1,5 +1,63 @@
 [
   {
+    "id": "1788657124477",
+    "title": "Suar Siar Fest",
+    "category": "photography",
+    "description": "",
+    "client": "ssf",
+    "date": "1 agustus 2026",
+    "tools": [
+      "photoshop",
+      "sony"
+    ],
+    "featured": true,
+    "mediaType": "image",
+    "mediaUrl": "/uploads/1788657120412_ONE00707.webp",
+    "gallery": [
+      {
+        "url": "/uploads/1788657120652_ONE00707.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657121196_RUID322d4ef1ca4b494f9570cb2149b0fad7.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657121801_ONE00656.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657122692_ONE00616.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657123644_ONE00634.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657123904_Instagram_story_-_3__1_.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657124194_Instagram_story_-_4__1___1_.webp",
+        "layout": "full",
+        "padding": false
+      },
+      {
+        "url": "/uploads/1788657124446_Instagram_story_-_2__1___1_.webp",
+        "layout": "full",
+        "padding": false
+      }
+    ],
+    "backgroundColor": ""
+  },
+  {
     "id": "1784585357172",
     "title": "Web Design ",
     "category": "uiux",
