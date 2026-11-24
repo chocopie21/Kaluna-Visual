@@ -6,6 +6,12 @@ import AdminPanel from './components/AdminPanel';
 import Preloader from './components/Preloader';
 import ScrollVelocity from './components/ScrollVelocity';
 import Lenis from 'lenis';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion, AnimatePresence } from 'motion/react';
+
+// Register GSAP Plugins
+gsap.registerPlugin(ScrollTrigger);
 
 import Lanyard from './components/Lanyard';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -292,31 +298,6 @@ function App() {
   }, [lang]);
 
   const t = TRANSLATIONS[lang];
- 
-  // Initialize Lenis Smooth Scrolling
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easeOutExpo
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-      infinite: false,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
 
   const trackPageView = async (loadedProjects) => {
     if (viewTrackedRef.current) return;
@@ -587,7 +568,7 @@ function App() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Initialize Global Lenis Smooth Scroll for Apple-like smooth page scrolling
+  // Initialize Global Lenis Smooth Scroll synchronized with GSAP ScrollTrigger
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -600,18 +581,19 @@ function App() {
       infinite: false,
     });
 
-    let animationFrameId;
-    function raf(time) {
-      lenis.raf(time);
-      animationFrameId = requestAnimationFrame(raf);
-    }
+    // Synchronize Lenis scroll position with GSAP ScrollTrigger
+    lenis.on('scroll', ScrollTrigger.update);
 
-    animationFrameId = requestAnimationFrame(raf);
+    // Run Lenis updates within GSAP's ticker for perfectly synced frames
+    const updateTicker = (time) => {
+      lenis.raf(time * 1000);
+    };
+
+    gsap.ticker.add(updateTicker);
+    gsap.ticker.lagSmoothing(0);
 
     return () => {
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
-      }
+      gsap.ticker.remove(updateTicker);
       lenis.destroy();
     };
   }, []);
@@ -835,33 +817,87 @@ function App() {
     fetchProjects();
   }, []);
 
-  // Intersection Observer for scroll reveal animations
+  // GSAP + ScrollTrigger animations for sections & reveal elements
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px -5% -80px -5%', // Trigger slightly inside the viewport
-      threshold: 0.05
-    };
+    // Ensure all reveal elements are marked visible for base styles
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
 
-    const handleIntersect = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
+    const ctx = gsap.context(() => {
+      // 1. Animate section headers
+      gsap.utils.toArray('.section-header').forEach((header) => {
+        gsap.from(header, {
+          scrollTrigger: {
+            trigger: header,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
+          y: 35,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power3.out',
+        });
+      });
+
+      // 2. Animate services cards with stagger
+      const serviceCards = document.querySelectorAll('.services-grid > *');
+      if (serviceCards.length > 0) {
+        gsap.from(serviceCards, {
+          scrollTrigger: {
+            trigger: '.services-grid',
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          },
+          y: 40,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.12,
+          ease: 'power3.out',
+        });
+      }
+
+      // 3. Animate timeline columns and items
+      gsap.utils.toArray('.timeline-col').forEach((col) => {
+        const items = col.querySelectorAll('.timeline-item');
+        if (items.length > 0) {
+          gsap.from(items, {
+            scrollTrigger: {
+              trigger: col,
+              start: 'top 82%',
+              toggleActions: 'play none none reverse',
+            },
+            y: 30,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.12,
+            ease: 'power3.out',
+          });
         }
       });
-    };
 
-    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+      // 4. Animate contact cards
+      const contactCards = document.querySelectorAll('.contact-grid > *');
+      if (contactCards.length > 0) {
+        gsap.from(contactCards, {
+          scrollTrigger: {
+            trigger: '.contact-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
+          y: 35,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: 'power3.out',
+        });
+      }
+    });
 
-    const revealElements = document.querySelectorAll('.reveal');
-    revealElements.forEach(el => observer.observe(el));
+    ScrollTrigger.refresh();
 
     return () => {
-      revealElements.forEach(el => observer.unobserve(el));
+      ctx.revert();
     };
-  }, [projects, activeCategory, viewMode]); // Re-run on dynamic updates
+  }, [projects, activeCategory, viewMode]);
 
   // Handler to add a Toast
   const addToast = (message, type = 'success') => {
@@ -977,25 +1013,33 @@ function App() {
         </div>
 
         {/* Mobile Menu Panel */}
-        {mobileMenuOpen && (
-          <div style={{
-            position: 'absolute',
-            top: '80px',
-            left: 0,
-            right: 0,
-            background: 'var(--bg-primary)',
-            borderBottom: '1px solid var(--border-color)',
-            padding: '1.5rem 2rem',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1.25rem',
-            zIndex: 99
-          }}>
-            <a href="#work" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>{t.nav.work}</a>
-            <a href="#about" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>{t.nav.about}</a>
-            <a href="#contact" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>{t.nav.contact}</a>
-          </div>
-        )}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div 
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+              style={{
+                position: 'absolute',
+                top: '80px',
+                left: 0,
+                right: 0,
+                background: 'var(--bg-primary)',
+                borderBottom: '1px solid var(--border-color)',
+                padding: '1.5rem 2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1.25rem',
+                zIndex: 99
+              }}
+            >
+              <a href="#work" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('work'); }}>{t.nav.work}</a>
+              <a href="#about" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>{t.nav.about}</a>
+              <a href="#contact" style={{ fontWeight: 500, color: 'var(--text-secondary)' }} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>{t.nav.contact}</a>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       <main>
@@ -1028,7 +1072,12 @@ function App() {
         </div>
         <div className="container">
           <div className="about-grid">
-            <div className="about-text reveal">
+            <motion.div 
+              className="about-text"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            >
               <div className="section-tagline" style={{ marginBottom: '0.25rem' }}>{t.hero.tagline}</div>
               <h1 className="section-title" style={{ marginBottom: '1.5rem', lineHeight: '1.05' }}>{t.hero.title}</h1>
               <p className="about-paragraph">
@@ -1037,9 +1086,7 @@ function App() {
               <p className="about-paragraph">
                 {t.hero.p2}
               </p>
-
-            </div>
-
+            </motion.div>
           </div>
         </div>
       </section>
@@ -1389,11 +1436,20 @@ function App() {
 
       {/* Toast Notification Renderer */}
       <div className="toast-container">
-        {toasts.map((toast) => (
-          <div key={toast.id} className="toast">
-            <span>{toast.message}</span>
-          </div>
-        ))}
+        <AnimatePresence>
+          {toasts.map((toast) => (
+            <motion.div 
+              key={toast.id} 
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              transition={{ duration: 0.25 }}
+              className="toast"
+            >
+              <span>{toast.message}</span>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
 
       {/* Viewport Bottom Gradient Blur Overlay */}
