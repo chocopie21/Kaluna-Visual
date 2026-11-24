@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, Play, X, Calendar, User, Briefcase, Cpu, Link, Grid, List } from 'lucide-react';
+import { ArrowUpRight, Play, X, Calendar, User, Briefcase, Cpu, Link, Grid, List, Globe, Monitor, Smartphone, RotateCw, ExternalLink, Image as ImageIcon } from 'lucide-react';
 import TiltedCard from './TiltedCard';
 import Masonry from './Masonry';
 import Lenis from 'lenis';
 import { motion, AnimatePresence } from 'motion/react';
+
+const getSafeLiveUrl = (url) => {
+  if (!url || typeof url !== 'string') return null;
+  const trimmed = url.trim();
+  if (!trimmed) return null;
+  if (/^https?:\/\//i.test(trimmed)) return trimmed;
+  if (/^[a-z]+:/i.test(trimmed)) return null;
+  return `https://${trimmed}`;
+};
 
 const isVideoUrl = (url) => {
   if (!url) return false;
@@ -43,6 +52,19 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
   const [selectedProject, setSelectedProject] = useState(null);
   const [hoveredProject, setHoveredProject] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [previewMode, setPreviewMode] = useState('live');
+  const [previewDevice, setPreviewDevice] = useState('desktop');
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [iframeKey, setIframeKey] = useState(0);
+
+  const handleOpenProject = (project) => {
+    const hasLiveUrl = Boolean(getSafeLiveUrl(project?.liveUrl));
+    setPreviewMode(hasLiveUrl ? 'live' : 'media');
+    setPreviewDevice('desktop');
+    setIframeLoaded(false);
+    setIframeKey(0);
+    setSelectedProject(project);
+  };
 
   const handleListItemMouseMove = (e) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
@@ -158,7 +180,7 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
       if (match) {
         // Delay modal load slightly to wait for layout animations to finish
         const timer = setTimeout(() => {
-          setSelectedProject(match);
+          handleOpenProject(match);
         }, 300);
         return () => clearTimeout(timer);
       }
@@ -222,6 +244,7 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
     { id: 'videography', label: lang === 'id' ? 'Videografi' : 'Videography' },
     { id: 'design', label: lang === 'id' ? 'Desain Grafis' : 'Graphic Design' },
     { id: 'uiux', label: lang === 'id' ? 'UI/UX Design' : 'UI/UX Design' },
+    { id: 'web', label: 'Website' },
     { id: 'random', label: lang === 'id' ? 'Random Pict' : 'Random Pict' }
   ];
 
@@ -232,6 +255,15 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
   const getCategoryLabel = (catId) => {
     const found = categories.find(c => c.id === catId);
     return found ? found.label : catId;
+  };
+
+  const safeLiveUrl = selectedProject ? getSafeLiveUrl(selectedProject.liveUrl) : null;
+  const getLiveHost = (url) => {
+    try {
+      return new URL(url).hostname;
+    } catch {
+      return url;
+    }
   };
 
   return (
@@ -378,7 +410,7 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
               img: isYouTubeUrl(project.mediaUrl) ? getYouTubeThumbnail(project.mediaUrl) : project.mediaUrl,
               project: project
             }))}
-            onItemClick={setSelectedProject}
+            onItemClick={handleOpenProject}
             stagger={0.04}
             scaleOnHover={true}
             hoverScale={0.96}
@@ -394,7 +426,7 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
                 onMouseEnter={() => handleListItemMouseEnter(project)}
                 onMouseLeave={handleListItemMouseLeave}
                 onMouseMove={handleListItemMouseMove}
-                onClick={() => setSelectedProject(project)}
+                onClick={() => handleOpenProject(project)}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
                   <span className="list-item-number" style={{
@@ -421,9 +453,19 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
                     fontWeight: '400',
                     margin: 0,
                     color: 'var(--text-primary)',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    flexWrap: 'wrap'
                   }}>
-                    {project.title}
+                    <span>{project.title}</span>
+                    {getSafeLiveUrl(project.liveUrl) && (
+                      <span className="list-live-badge">
+                        <Globe size={12} />
+                        <span>Live Web</span>
+                      </span>
+                    )}
                   </h3>
                 </div>
                 <div className="list-item-arrow" style={{
@@ -509,9 +551,15 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
                 key={project.id}
                 className="portfolio-card reveal"
                 style={{ cursor: 'pointer' }}
-                onClick={() => setSelectedProject(project)}
+                onClick={() => handleOpenProject(project)}
               >
                 <div className="portfolio-card-media-wrapper" style={{ width: '100%', aspectRatio: '4/3', position: 'relative' }}>
+                  {getSafeLiveUrl(project.liveUrl) && (
+                    <div className="live-web-badge" style={{ zIndex: 10 }}>
+                      <Globe size={13} />
+                      <span>Live Web</span>
+                    </div>
+                  )}
                   {(project.mediaType === 'video' || isYouTubeUrl(project.mediaUrl)) && (
                     <div className="video-badge" style={{ zIndex: 10 }}>
                       <Play size={16} fill="currentColor" />
@@ -567,10 +615,22 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
         {selectedProject && (
           <>
             <div className="modal-controls">
-              <button className="modal-control-btn" onClick={handleCopyLink} title="Salin Link Karya" aria-label="Salin link karya ke clipboard">
+              {safeLiveUrl && (
+                <a
+                  href={safeLiveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modal-control-btn"
+                  title={lang === 'id' ? 'Buka Website Live' : 'Open Live Website'}
+                  aria-label={lang === 'id' ? 'Buka website live di tab baru' : 'Open live website in new tab'}
+                >
+                  <ExternalLink size={18} />
+                </a>
+              )}
+              <button type="button" className="modal-control-btn" onClick={handleCopyLink} title="Salin Link Karya" aria-label="Salin link karya ke clipboard">
                 <Link size={18} />
               </button>
-              <button className="modal-control-btn modal-close-btn" onClick={handleCloseModal} title="Tutup" aria-label="Tutup detail karya">
+              <button type="button" className="modal-control-btn modal-close-btn" onClick={handleCloseModal} title="Tutup" aria-label="Tutup detail karya">
                 <X size={18} />
               </button>
             </div>
@@ -614,9 +674,119 @@ const PortfolioGrid = ({ projects = [], activeCategory, setActiveCategory, viewM
                 </div>
               </div>
 
-              {/* Main Media Visual */}
+              {/* Main Media Visual / Interactive Web Preview */}
               <div className="modal-main-media">
-                {isYouTubeUrl(selectedProject.mediaUrl) ? (
+                {safeLiveUrl && (
+                  <div className="web-preview-toolbar">
+                    <div className="web-preview-mode-tabs" role="tablist" aria-label={lang === 'id' ? 'Mode tampilan proyek' : 'Project view mode'}>
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={previewMode === 'live'}
+                        className={`web-preview-tab ${previewMode === 'live' ? 'active' : ''}`}
+                        onClick={() => setPreviewMode('live')}
+                      >
+                        <Globe size={14} />
+                        <span>{lang === 'id' ? 'Live Preview' : 'Live Preview'}</span>
+                      </button>
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={previewMode === 'media'}
+                        className={`web-preview-tab ${previewMode === 'media' ? 'active' : ''}`}
+                        onClick={() => setPreviewMode('media')}
+                      >
+                        <ImageIcon size={14} />
+                        <span>{lang === 'id' ? 'Cover Media' : 'Cover Media'}</span>
+                      </button>
+                    </div>
+
+                    <div className="web-preview-actions">
+                      {previewMode === 'live' && (
+                        <>
+                          <div className="web-viewport-switch" role="group" aria-label={lang === 'id' ? 'Ukuran layar preview' : 'Preview viewport size'}>
+                            <button
+                              type="button"
+                              className={`web-viewport-btn ${previewDevice === 'desktop' ? 'active' : ''}`}
+                              onClick={() => setPreviewDevice('desktop')}
+                              aria-pressed={previewDevice === 'desktop'}
+                              title="Desktop View"
+                            >
+                              <Monitor size={14} />
+                              <span>Desktop</span>
+                            </button>
+                            <button
+                              type="button"
+                              className={`web-viewport-btn ${previewDevice === 'mobile' ? 'active' : ''}`}
+                              onClick={() => setPreviewDevice('mobile')}
+                              aria-pressed={previewDevice === 'mobile'}
+                              title="Mobile View (390px)"
+                            >
+                              <Smartphone size={14} />
+                              <span>Mobile</span>
+                            </button>
+                          </div>
+                          <button
+                            type="button"
+                            className="web-preview-refresh-btn"
+                            onClick={() => {
+                              setIframeLoaded(false);
+                              setIframeKey(prev => prev + 1);
+                            }}
+                            title={lang === 'id' ? 'Muat ulang preview' : 'Reload preview'}
+                            aria-label={lang === 'id' ? 'Muat ulang preview' : 'Reload preview'}
+                          >
+                            <RotateCw size={14} />
+                          </button>
+                        </>
+                      )}
+
+                      <a
+                        href={safeLiveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="web-preview-visit-btn"
+                      >
+                        <span>{lang === 'id' ? 'Buka Situs' : 'Open Site'}</span>
+                        <ExternalLink size={14} />
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {safeLiveUrl && previewMode === 'live' ? (
+                  <div className={`web-preview-stage ${previewDevice === 'mobile' ? 'is-mobile' : ''}`}>
+                    <div className="web-preview-frame-shell">
+                      {!iframeLoaded && (
+                        <div className="web-preview-loading">
+                          <div className="web-preview-spinner" />
+                          <span>{lang === 'id' ? 'Memuat preview interaktif...' : 'Loading interactive preview...'}</span>
+                        </div>
+                      )}
+                      <iframe
+                        key={`${selectedProject.id}-${iframeKey}`}
+                        src={safeLiveUrl}
+                        title={`${selectedProject.title} — Live Preview`}
+                        className="web-preview-iframe"
+                        onLoad={() => setIframeLoaded(true)}
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="web-preview-footer-bar">
+                      <span className="web-preview-host">{getLiveHost(safeLiveUrl)}</span>
+                      <div className="web-preview-fallback-links">
+                        <span>{lang === 'id' ? 'Preview kosong atau terblokir?' : 'Preview blank or blocked?'}</span>
+                        <button type="button" className="web-preview-inline-btn" onClick={() => setPreviewMode('media')}>
+                          {lang === 'id' ? 'Lihat Cover' : 'View Cover'}
+                        </button>
+                        <a href={safeLiveUrl} target="_blank" rel="noopener noreferrer" className="web-preview-inline-link">
+                          {lang === 'id' ? 'Buka Tab Baru' : 'Open New Tab'}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ) : isYouTubeUrl(selectedProject.mediaUrl) ? (
                   <div className="modal-youtube-wrapper" style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden', borderRadius: 'var(--border-radius-md)' }}>
                     <iframe
                       src={getYouTubeEmbedUrl(selectedProject.mediaUrl)}

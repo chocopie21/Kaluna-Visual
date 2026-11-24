@@ -165,6 +165,7 @@ const TRANSLATIONS = {
         videography: "Videografi",
         design: "Desain Grafis",
         uiux: "UI/UX Design",
+        web: "Website",
         random: "Random Pict"
       },
       empty: "Belum ada karya untuk kategori ini.",
@@ -263,6 +264,7 @@ const TRANSLATIONS = {
         videography: "Videography",
         design: "Graphic Design",
         uiux: "UI/UX Design",
+        web: "Website",
         random: "Random Pict"
       },
       empty: "No works found in this category yet.",

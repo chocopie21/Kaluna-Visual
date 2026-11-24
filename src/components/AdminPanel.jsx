@@ -30,6 +30,7 @@ const getCategoryLabel = (cat) => {
     videography: 'Videografi',
     design: 'Desain Grafis',
     uiux: 'UI/UX Design',
+    web: 'Website',
     random: 'Random Pict'
   };
   return labels[cat] || cat;
@@ -275,6 +276,7 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
   const [isDraggingMedia, setIsDraggingMedia] = useState(false);
   const [isDraggingGallery, setIsDraggingGallery] = useState(false);
   const [youtubeUrl, setYoutubeUrl] = useState('');
+  const [liveUrl, setLiveUrl] = useState('');
 
   // Login handler
   const handleLogin = (e) => {
@@ -477,6 +479,7 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
     
     const isYT = project.mediaUrl && (project.mediaUrl.includes('youtube.com') || project.mediaUrl.includes('youtu.be'));
     setYoutubeUrl(isYT ? project.mediaUrl : '');
+    setLiveUrl(project.liveUrl || '');
     
     // Normalize gallery entries (both string and object support)
     const normalizedGallery = (project.gallery || []).map(item => 
@@ -621,6 +624,16 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
 
       // 3. Save Project object
       const toolsArray = tools.split(',').map(t => t.trim()).filter(t => t.length > 0);
+      const trimmedLiveUrl = liveUrl.trim();
+      let normalizedLiveUrl = '';
+      if (trimmedLiveUrl) {
+        if (/^https?:\/\//i.test(trimmedLiveUrl)) {
+          normalizedLiveUrl = trimmedLiveUrl;
+        } else if (!/^[a-z]+:/i.test(trimmedLiveUrl)) {
+          normalizedLiveUrl = `https://${trimmedLiveUrl}`;
+        }
+      }
+
       const projectData = {
         title,
         category,
@@ -632,7 +645,8 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
         mediaType,
         mediaUrl: finalMediaUrl,
         gallery: finalGalleryItems,
-        backgroundColor: backgroundColor || ''
+        backgroundColor: backgroundColor || '',
+        liveUrl: normalizedLiveUrl
       };
 
       if (editingProject) {
@@ -762,6 +776,7 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
     setGalleryPreviews([]);
     setBackgroundColor('');
     setYoutubeUrl('');
+    setLiveUrl('');
   };
 
   const handleLogout = () => {
@@ -1141,6 +1156,19 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
                           <h4 className="admin-dashboard-card-title">{project.title}</h4>
                           <span className="admin-dashboard-card-meta">
                             {getCategoryLabel(project.category)}
+                            {project.liveUrl && (
+                              <span style={{
+                                marginLeft: '0.5rem',
+                                fontSize: '0.7rem',
+                                padding: '0.15rem 0.45rem',
+                                borderRadius: '999px',
+                                backgroundColor: 'rgba(208, 58, 42, 0.12)',
+                                color: 'var(--accent-color)',
+                                fontWeight: '600'
+                              }}>
+                                Live Web
+                              </span>
+                            )}
                           </span>
                           
                           <div className="admin-dashboard-card-actions">
@@ -1404,6 +1432,7 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
                           <option value="videography">Videografi</option>
                           <option value="design">Desain Grafis</option>
                           <option value="uiux">UI/UX Design</option>
+                          <option value="web">Website</option>
                           <option value="random">Random Pict</option>
                         </select>
                       </div>
@@ -1586,6 +1615,24 @@ const AdminPanel = ({ isOpen, onClose, projects = [], onUpdateProjects, addToast
                         />
                         <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginTop: '0.4rem', display: 'block', lineHeight: '1.4' }}>
                           Jika dimasukkan, sistem akan otomatis mengambil cover thumbnail dari YouTube dan memutar videonya di dalam modal detail karya secara penuh.
+                        </span>
+                      </div>
+
+                      <div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+                        <span className="contact-label" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.5rem' }}>
+                          <Globe size={13} />
+                          <span>Link Website Live (Opsional — untuk Preview Interaktif)</span>
+                        </span>
+                        <input
+                          type="url"
+                          className="admin-inline-input"
+                          style={{ width: '100%', fontSize: '0.95rem' }}
+                          value={liveUrl}
+                          onChange={(e) => setLiveUrl(e.target.value)}
+                          placeholder="https://nama-project-anda.vercel.app"
+                        />
+                        <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginTop: '0.4rem', display: 'block', lineHeight: '1.4' }}>
+                          Jika diisi, klien dapat langsung mencoba preview interaktif website (mode Desktop & Mobile) di dalam modal detail karya, sekaligus tersedia tombol buka situs di tab baru.
                         </span>
                       </div>
                     </div>
